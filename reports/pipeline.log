@@ -1,0 +1,45 @@
+2026-05-27 23:47:01,495 - INFO - Pipeline started.
+2026-05-27 23:47:01,610 - INFO - Data extraction completed.
+2026-05-27 23:47:01,645 - INFO - Data transformation completed.
+2026-05-27 23:47:01,645 - INFO - API response validation passed.
+2026-05-27 23:47:01,645 - INFO - Schema validation passed.
+2026-05-27 23:47:01,675 - INFO - Null value validation passed.
+2026-05-27 23:47:01,681 - INFO - Range validation passed.
+2026-05-27 23:47:01,690 - INFO - Duplicate check completed.
+2026-05-27 23:47:01,690 - INFO - All validation checks completed successfully.
+2026-05-27 23:47:01,690 - INFO - Data validation completed.
+2026-05-27 23:47:01,706 - INFO - Processed CSV saved.
+2026-05-27 23:47:05,229 - INFO - Data loaded into SQL Server warehouse.
+2026-05-27 23:47:05,264 - INFO - Daily report generated.
+2026-05-27 23:47:06,706 - INFO - Telegram alert sent.
+2026-05-27 23:47:06,706 - INFO - Pipeline completed successfully.
+2026-05-27 23:47:43,840 - INFO - Pipeline started.
+2026-05-27 23:47:43,933 - INFO - Data extraction completed.
+2026-05-27 23:47:43,960 - INFO - Data transformation completed.
+2026-05-27 23:47:43,960 - INFO - API response validation passed.
+2026-05-27 23:47:43,960 - INFO - Schema validation passed.
+2026-05-27 23:47:43,965 - INFO - Null value validation passed.
+2026-05-27 23:47:43,965 - INFO - Range validation passed.
+2026-05-27 23:47:43,965 - INFO - Duplicate check completed.
+2026-05-27 23:47:43,965 - INFO - All validation checks completed successfully.
+2026-05-27 23:47:43,965 - INFO - Data validation completed.
+2026-05-27 23:47:43,980 - INFO - Processed CSV saved.
+2026-05-27 23:47:47,455 - INFO - Data loaded into SQL Server warehouse.
+2026-05-27 23:47:47,466 - INFO - Daily report generated.
+2026-05-27 23:47:48,476 - INFO - Telegram alert sent.
+2026-05-27 23:47:48,476 - INFO - Pipeline completed successfully.
+2026-05-27 23:54:04,585 - INFO - Pipeline started.
+2026-05-27 23:54:04,834 - INFO - Data extraction completed.
+2026-05-27 23:54:04,852 - INFO - Data transformation completed.
+2026-05-27 23:54:04,852 - INFO - API response validation passed.
+2026-05-27 23:54:04,852 - INFO - Schema validation passed.
+2026-05-27 23:54:04,870 - INFO - Null value validation passed.
+2026-05-27 23:54:04,870 - INFO - Range validation passed.
+2026-05-27 23:54:04,870 - INFO - Duplicate check completed.
+2026-05-27 23:54:04,870 - INFO - All validation checks completed successfully.
+2026-05-27 23:54:04,870 - INFO - Data validation completed.
+2026-05-27 23:54:04,894 - INFO - Processed CSV saved.
+2026-05-27 23:54:08,230 - INFO - Data loaded into SQL Server warehouse.
+2026-05-27 23:54:08,244 - INFO - Daily report generated.
+2026-05-27 23:54:09,256 - INFO - Telegram alert sent.
+2026-05-27 23:54:09,256 - INFO - Pipeline completed successfully.

@@ -17,15 +17,6 @@ def load_to_database(df):
 
     cursor = connection.cursor()
 
-    cursor.execute("DELETE FROM lab_results")
-    cursor.execute("DELETE FROM encounters")
-    cursor.execute("DELETE FROM patients")
-    cursor.execute("DELETE FROM diagnoses")
-    cursor.execute("DELETE FROM departments")
-    cursor.execute("DELETE FROM providers")
-    cursor.execute("DELETE FROM lab_tests")
-    connection.commit()
-
     # -----------------------------
     # Patients
     # -----------------------------
@@ -34,11 +25,14 @@ def load_to_database(df):
         ["patient_id", "age", "sex"]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM patients")
-
     for _, row in patients_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM patients
+                WHERE patient_id = ?
+            )
             INSERT INTO patients (
                 patient_id,
                 age,
@@ -46,6 +40,7 @@ def load_to_database(df):
             )
             VALUES (?, ?, ?)
         """,
+        row["patient_id"],
         row["patient_id"],
         row["age"],
         row["sex"]
@@ -59,17 +54,21 @@ def load_to_database(df):
         ["diagnosis_code", "diagnosis"]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM diagnoses")
-
     for _, row in diagnoses_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM diagnoses
+                WHERE diagnosis_code = ?
+            )
             INSERT INTO diagnoses (
                 diagnosis_code,
                 diagnosis_name
             )
             VALUES (?, ?)
         """,
+        row["diagnosis_code"],
         row["diagnosis_code"],
         row["diagnosis"]
         )
@@ -82,16 +81,20 @@ def load_to_database(df):
         ["department"]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM departments")
-
     for _, row in departments_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM departments
+                WHERE department_name = ?
+            )
             INSERT INTO departments (
                 department_name
             )
             VALUES (?)
         """,
+        row["department"],
         row["department"]
         )
 
@@ -103,16 +106,20 @@ def load_to_database(df):
         ["provider"]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM providers")
-
     for _, row in providers_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM providers
+                WHERE provider_name = ?
+            )
             INSERT INTO providers (
                 provider_name
             )
             VALUES (?)
         """,
+        row["provider"],
         row["provider"]
         )
 
@@ -129,11 +136,14 @@ def load_to_database(df):
         ]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM lab_tests")
-
     for _, row in lab_tests_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM lab_tests
+                WHERE lab_test_name = ?
+            )
             INSERT INTO lab_tests (
                 lab_test_name,
                 unit,
@@ -142,6 +152,7 @@ def load_to_database(df):
             )
             VALUES (?, ?, ?, ?)
         """,
+        row["lab_test"],
         row["lab_test"],
         row["unit"],
         row["reference_low"],
@@ -199,11 +210,14 @@ def load_to_database(df):
         ]
     ].drop_duplicates()
 
-    cursor.execute("DELETE FROM encounters")
-
     for _, row in encounters_df.iterrows():
 
         cursor.execute("""
+            IF NOT EXISTS (
+                SELECT 1
+                FROM encounters
+                WHERE encounter_id = ?
+            )
             INSERT INTO encounters (
                 encounter_id,
                 patient_id,
@@ -215,6 +229,7 @@ def load_to_database(df):
             VALUES (?, ?, ?, ?, ?, ?)
         """,
         row["encounter_id"],
+        row["encounter_id"],
         row["patient_id"],
         row["diagnosis_code"],
         department_lookup[row["department"]],
@@ -225,8 +240,6 @@ def load_to_database(df):
     # -----------------------------
     # Lab Results
     # -----------------------------
-
-    cursor.execute("DELETE FROM lab_results")
 
     for _, row in df.iterrows():
 
