@@ -43,3 +43,35 @@
 2026-05-27 23:54:08,244 - INFO - Daily report generated.
 2026-05-27 23:54:09,256 - INFO - Telegram alert sent.
 2026-05-27 23:54:09,256 - INFO - Pipeline completed successfully.
+2026-05-31 18:31:17,123 - INFO - Pipeline started.
+2026-05-31 18:31:17,426 - INFO - Data extraction completed.
+2026-05-31 18:31:17,500 - INFO - Data transformation completed.
+2026-05-31 18:31:17,500 - INFO - API response validation passed.
+2026-05-31 18:31:17,500 - INFO - Schema validation passed.
+2026-05-31 18:31:17,526 - INFO - Null value validation passed.
+2026-05-31 18:31:17,533 - INFO - Range validation passed.
+2026-05-31 18:31:17,544 - INFO - Duplicate check completed.
+2026-05-31 18:31:17,544 - INFO - All validation checks completed successfully.
+2026-05-31 18:31:17,545 - INFO - Data validation completed.
+2026-05-31 18:31:17,576 - INFO - Processed CSV saved.
+2026-05-31 18:31:23,456 - INFO - Data loaded into SQL Server warehouse.
+2026-05-31 18:31:23,477 - INFO - Daily report generated.
+2026-05-31 18:31:25,353 - INFO - Telegram alert sent.
+2026-05-31 18:31:25,354 - INFO - Pipeline completed successfully.
+2026-06-02 17:33:04,851 - INFO - Pipeline started.
+2026-06-02 17:33:06,977 - ERROR - Pipeline failed: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /lab-results (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8000): Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it"))
+2026-06-02 17:37:29,292 - INFO - Pipeline started.
+2026-06-02 17:37:29,684 - INFO - Data extraction completed.
+2026-06-02 17:37:29,794 - INFO - Data transformation completed.
+2026-06-02 17:37:29,794 - INFO - API response validation passed.
+2026-06-02 17:37:29,794 - INFO - Schema validation passed.
+2026-06-02 17:37:29,818 - INFO - Null value validation passed.
+2026-06-02 17:37:29,828 - INFO - Range validation passed.
+2026-06-02 17:37:29,840 - INFO - Duplicate check completed.
+2026-06-02 17:37:29,841 - INFO - All validation checks completed successfully.
+2026-06-02 17:37:29,841 - INFO - Data validation completed.
+2026-06-02 17:37:29,883 - INFO - Processed CSV saved.
+2026-06-02 17:38:05,646 - INFO - Data loaded into SQL Server warehouse.
+2026-06-02 17:38:05,744 - INFO - Daily report generated.
+2026-06-02 17:38:31,398 - INFO - Telegram alert sent.
+2026-06-02 17:38:31,398 - INFO - Pipeline completed successfully.
