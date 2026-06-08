@@ -2,279 +2,407 @@
 
 ## Overview
 
-LabRisk Clinical Monitoring System is an end-to-end healthcare data engineering project that automates laboratory risk monitoring and clinical reporting.
+LabRisk Clinical Monitoring System is an end-to-end healthcare analytics platform designed to automate laboratory data processing, risk classification, operational alerting, and clinical monitoring.
 
-The system extracts laboratory data from a healthcare REST API, transforms and validates laboratory results, classifies patient risk levels, stores processed data in Microsoft SQL Server, sends automated Telegram alerts, and provides interactive analytics through Power BI.
-
-This project demonstrates modern data engineering, ETL development, data warehousing, automation, and business intelligence practices within a healthcare setting.
-
----
-
-## Project Architecture
-
-Healthcare Laboratory API
-↓
-Python ETL Pipeline
-↓
-Clinical Risk Classification Engine
-↓
-SQL Server Healthcare Warehouse
-↓
-Telegram Alert Automation
-↓
-Power BI Clinical Dashboard
+The project demonstrates a complete data engineering workflow from data ingestion through analytics delivery. The system extracts healthcare laboratory records through an API, performs data transformation and validation, loads data into a relational database, generates operational reports, sends automated alerts, and provides interactive business intelligence dashboards for clinical decision support.
 
 ---
 
 ## Business Problem
 
-Healthcare organizations generate large volumes of laboratory results every day. Manual review of reports can delay identification of abnormal findings and critical patient conditions.
+Healthcare organizations process thousands of laboratory results daily. Critical abnormalities can be difficult to identify quickly when data is fragmented across systems.
 
-This project provides an automated workflow that:
+Delayed identification of abnormal laboratory results may result in:
 
-- Monitors laboratory activity
-- Identifies abnormal and critical results
-- Prioritizes high-risk patients
-- Supports departmental monitoring
-- Delivers real-time operational insights
+* Delayed clinical intervention
+* Increased patient risk
+* Reduced operational efficiency
+* Increased workload for clinical staff
+
+The LabRisk Clinical Monitoring System addresses these challenges by automatically identifying abnormal and high-risk laboratory results and providing actionable insights through dashboards and automated notifications.
 
 ---
 
-## Features
+## Project Objectives
 
-### Data Extraction
+The system was designed to:
 
-- Extracts laboratory data from a FastAPI healthcare API
-- Retrieves patient demographics and laboratory information
-- Processes structured JSON responses
+* Automate healthcare laboratory data ingestion
+* Standardize and validate incoming records
+* Classify laboratory results by risk level
+* Create analytics-ready datasets
+* Support operational alerting workflows
+* Provide interactive dashboards for monitoring and decision making
+* Demonstrate an end-to-end data engineering pipeline
 
-### Data Transformation
+---
 
-- Validates laboratory values against reference ranges
-- Identifies abnormal results
-- Applies clinical risk classification rules
-- Generates reporting metrics
+## System Architecture
 
-### Data Storage
-
-- Loads processed records into Microsoft SQL Server
-- Uses a relational healthcare warehouse design
-- Supports analytical reporting and dashboarding
-
-### Automated Alerts
-
-- Generates daily laboratory risk reports
-- Sends notifications through Telegram Bot API
-- Highlights critical and high-risk findings
-
-### Analytics and Visualization
-
-- Interactive Power BI dashboard
-- Department-level analysis
-- Risk-level monitoring
-- Patient-level reporting
-- Clinical trend analysis
+```text
+Healthcare API
+       │
+       ▼
+Data Extraction
+       │
+       ▼
+Data Transformation
+       │
+       ▼
+Data Validation
+       │
+       ▼
+SQL Server Warehouse
+       │
+       ├────────► Telegram Clinical Alerts
+       │
+       ├────────► Power BI Dashboard
+       │
+       └────────► Dash Analytics Dashboard
+```
 
 ---
 
 ## Technology Stack
 
-| Category | Technology |
-|-----------|------------|
-| Programming | Python |
-| API | FastAPI |
-| Data Processing | Pandas |
-| Database | Microsoft SQL Server |
-| Database Connectivity | PyODBC |
-| Business Intelligence | Power BI |
-| Notifications | Telegram Bot API |
-| Development Environment | VS Code |
-| Version Control | Git & GitHub |
+### Programming
 
----
+* Python
 
-## ETL Workflow
+### Data Processing
 
-### Extract
+* Pandas
+* NumPy
 
-Retrieve healthcare laboratory data from the FastAPI endpoint.
+### Database
 
-### Transform
+* Microsoft SQL Server
+* SQL
 
-- Clean incoming records
-- Validate laboratory values
-- Assign result status
-- Determine patient risk level
-- Generate summary metrics
+### API Layer
 
-### Load
+* FastAPI
 
-Store processed records within SQL Server warehouse tables.
+### Dashboarding
+
+* Dash
+* Plotly
+* Power BI
+
+### Automation
+
+* Telegram Bot API
+
+### Development Tools
+
+* Visual Studio Code
+* Git
+* GitHub
 
 ---
 
 ## Database Design
 
-### Database
+The healthcare warehouse consists of the following normalized tables:
 
-HospitalLabDB
-
-### Tables
-
-#### patients
+### Patients
 
 Stores patient demographic information.
 
-| Column |
-|----------|
-| patient_id |
-| age |
-| sex |
+### Diagnoses
 
-#### diagnoses
+Stores diagnosis codes and descriptions.
 
-Stores diagnosis reference information.
+### Departments
 
-| Column |
-|----------|
-| diagnosis_code |
-| diagnosis_name |
+Stores healthcare departments.
 
-#### departments
+### Providers
 
-Stores hospital department information.
+Stores healthcare provider information.
 
-| Column |
-|----------|
-| department_id |
-| department_name |
+### Encounters
 
-#### providers
+Stores patient encounter records.
 
-Stores provider information.
+### Lab Tests
 
-| Column |
-|----------|
-| provider_id |
-| provider_name |
+Stores laboratory test definitions and reference ranges.
 
-#### lab_tests
+### Lab Results
 
-Stores laboratory reference values.
-
-| Column |
-|----------|
-| lab_test_id |
-| lab_test_name |
-| unit |
-| reference_low |
-| reference_high |
-
-#### encounters
-
-Stores patient encounter information.
-
-| Column |
-|----------|
-| encounter_id |
-| patient_id |
-| diagnosis_code |
-| department_id |
-| provider_id |
-| encounter_date |
-
-#### lab_results
-
-Stores laboratory observations.
-
-| Column |
-|----------|
-| result_id |
-| encounter_id |
-| lab_test_id |
-| lab_value |
-| result_status |
-| risk_level |
-| result_date |
+Stores laboratory test results and risk classifications.
 
 ---
 
-## Data Model
+## ETL Pipeline Components
 
-patients
-→ encounters
-→ lab_results
+### 1. Data Extraction
 
-diagnoses
-→ encounters
+Laboratory records are extracted through a FastAPI endpoint.
 
-departments
-→ encounters
+Example fields include:
 
-providers
-→ encounters
-
-lab_tests
-→ lab_results
+* Patient ID
+* Encounter ID
+* Diagnosis
+* Laboratory Test
+* Laboratory Value
+* Provider
+* Department
+* Result Date
 
 ---
 
-## Risk Classification
+### 2. Data Transformation
 
-### Critical
+The transformation layer performs:
 
-Results that exceed predefined critical clinical thresholds.
+* Data cleaning
+* Data normalization
+* Type conversion
+* Result classification
+* Risk classification
 
-### High Risk
+Each laboratory result is classified as:
 
-Results outside normal reference ranges that require follow-up.
+* Normal
+* High
+* Low
 
-### Routine
+Risk categories include:
 
-Results within acceptable clinical limits.
+* Routine
+* High Risk
+* Critical
+
+---
+
+### 3. Data Validation
+
+Multiple validation checks ensure data quality.
+
+Implemented validations include:
+
+#### API Response Validation
+
+Verifies successful data extraction.
+
+#### Schema Validation
+
+Verifies required columns exist.
+
+#### Null Value Validation
+
+Checks for missing values in critical fields.
+
+#### Range Validation
+
+Verifies laboratory values fall within valid ranges.
+
+#### Duplicate Validation
+
+Identifies duplicate encounter records.
+
+#### Row Count Validation
+
+Confirms no unexpected data loss during processing.
+
+---
+
+### 4. Database Loading
+
+Validated records are loaded into SQL Server.
+
+Loading process includes:
+
+* Dimension table updates
+* Fact table population
+* Referential integrity preservation
+* Incremental loading logic
+
+---
+
+### 5. Reporting
+
+The system automatically generates:
+
+* Daily laboratory summary reports
+* High-risk patient reports
+* Operational monitoring outputs
+
+Reports are stored within the reports directory.
+
+---
+
+### 6. Operational Alerting
+
+Critical and high-risk laboratory findings can be automatically transmitted through Telegram.
+
+This functionality supports:
+
+* Operational alerting
+* Clinical escalation
+* Rapid response workflows
 
 ---
 
 ## Power BI Dashboard
 
-The dashboard provides:
+The Power BI dashboard provides executive-level monitoring through:
 
-- Total Lab Results
-- Total Patients
-- Critical Results
-- High Risk Patients
-- Abnormal Results Percentage
-- Top Critical Lab Tests
-- Risk Level Distribution
-- Diagnosis Distribution
-- Department Risk Heatmap
-- Laboratory Trends
-- High Risk Patient Monitoring
+### KPI Metrics
 
----
+* Total Lab Results
+* Total Patients
+* Critical Results
+* High-Risk Results
+* Department Coverage
 
-## Example Workflow
+### Visualizations
 
-1. Extract healthcare data from REST API
-2. Transform and validate laboratory values
-3. Apply clinical risk rules
-4. Load processed data into SQL Server
-5. Generate daily laboratory report
-6. Send Telegram alert
-7. Visualize results in Power BI
+* Risk Level Distribution
+* Lab Results by Department
+* Critical Results by Department
+* Lab Trend Analysis
+* Department Risk Heatmap
+* High-Risk Patient Monitoring
 
 ---
 
-## Project Outcome
+## Dash Analytics Dashboard
 
-This project demonstrates how healthcare organizations can transform raw laboratory data into actionable clinical intelligence through automated ETL processing, relational data warehousing, alert automation, and interactive business intelligence dashboards.
+The project includes a fully interactive Dash web application connected to the healthcare warehouse.
+
+### Dashboard Features
+
+#### KPI Summary Cards
+
+* Total Lab Results
+* Total Patients
+* Abnormal Results
+* Critical Results
+* High-Risk Results
+* Departments Monitored
+
+#### Interactive Filters
+
+* Department
+* Diagnosis
+* Risk Level
+* Gender
+* Laboratory Test
+* Date Range
+
+#### Visual Analytics
+
+* Risk Level Distribution
+* Laboratory Results Trend
+* Laboratory Results by Department
+* Critical Results by Department
+* Diagnosis Distribution
+* Age Distribution
+
+#### Monitoring Table
+
+Interactive High-Risk Patient Monitoring table with filtering and sorting capabilities.
 
 ---
 
-## Author
+## Business Value
 
-Kelvin Iyenoma
+The LabRisk Clinical Monitoring System demonstrates how data engineering can support healthcare operations through:
 
-MSBA 692 – Pipelines to Insights
+* Improved laboratory monitoring
+* Faster identification of critical findings
+* Automated operational alerts
+* Improved clinical visibility
+* Enhanced decision support
+* Reduced manual review workload
 
-University of Louisville
+---
+
+## Project Structure
+
+```text
+LAB-RISK-ALERT-PIPELINE
+│
+├── api
+│   └── healthcare_api.py
+│
+├── Dashboard
+│   ├── dash_app.py
+│   ├── LabRiskDashboard.png
+│   └── dashboard assets
+│
+├── data
+│   ├── raw
+│   └── processed
+│
+├── reports
+│   ├── daily_lab_report.txt
+│   └── pipeline.log
+│
+├── src
+│   ├── extract.py
+│   ├── transform.py
+│   ├── validate.py
+│   ├── load.py
+│   ├── report.py
+│   └── send_alert.py
+│
+├── main.py
+├── requirements.txt
+├── README.md
+└── .env
+```
+
+---
+
+## How to Run
+
+### 1. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Start the API
+
+```bash
+uvicorn api.healthcare_api:app --reload
+```
+
+### 3. Execute ETL Pipeline
+
+```bash
+python main.py
+```
+
+### 4. Launch Dash Dashboard
+
+```bash
+python Dashboard/dash_app.py
+```
+
+### 5. Open Dashboard
+
+```text
+http://127.0.0.1:8050
+```
+
+---
+
+## Future Enhancements
+
+Planned enhancements include:
+
+* Real-time streaming ingestion
+* Cloud deployment
+* Automated scheduling with Airflow
+* Predictive risk scoring
+* Machine learning integration
+* Electronic Health Record integration
+* Real-time notification services
+
+
