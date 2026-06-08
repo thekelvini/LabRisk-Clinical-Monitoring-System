@@ -1,0 +1,1001 @@
+patient_id,encounter_id,age,sex,diagnosis_code,diagnosis,lab_test,lab_value,unit,reference_low,reference_high,result_status,risk_level,department,provider,result_date
+P0001,E0001,37,Female,D64.9,Anemia,Potassium,6.5,mmol/L,3.5,5.1,High,Critical,Internal Medicine,Dr Lee,2026-05-19
+P0002,E0002,75,Female,R50.9,Fever,Lactate,6.2,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-05-04
+P0003,E0003,82,Male,N17.9,Acute kidney injury,Hemoglobin,11.7,g/dL,12.0,16.0,Low,Routine,ICU,Dr Wilson,2026-05-10
+P0004,E0004,51,Male,N18.4,Chronic kidney disease,Glucose,116.1,mg/dL,70.0,140.0,Normal,Routine,Nephrology,Dr Brown,2026-05-19
+P0005,E0005,84,Male,A41.9,Sepsis,Lactate,0.7,mmol/L,0.5,2.2,Normal,Routine,Emergency,Dr Smith,2026-05-30
+P0006,E0006,33,Male,I10,Hypertension,Lactate,7.4,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Lee,2026-05-09
+P0007,E0007,85,Male,R50.9,Fever,Lactate,7.5,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Jones,2026-05-09
+P0008,E0008,90,Female,I10,Hypertension,Sodium,136.4,mmol/L,135.0,145.0,Normal,Routine,Cardiology,Dr Smith,2026-06-01
+P0009,E0009,51,Female,N18.4,Chronic kidney disease,AST,199.6,U/L,10.0,40.0,High,Routine,Nephrology,Dr Adams,2026-05-04
+P0010,E0010,81,Male,K76.9,Liver disease,Lactate,7.4,mmol/L,0.5,2.2,High,Routine,Hepatology,Dr Brown,2026-05-22
+P0011,E0011,42,Male,N17.9,Acute kidney injury,Glucose,199.1,mg/dL,70.0,140.0,High,Routine,ICU,Dr Jones,2026-05-26
+P0012,E0012,73,Female,I50.9,Heart failure,Sodium,151.9,mmol/L,135.0,145.0,High,Routine,Cardiology,Dr Thomas,2026-05-30
+P0013,E0013,69,Female,K76.9,Liver disease,Troponin,36.2,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Thomas,2026-05-04
+P0014,E0014,74,Female,R50.9,Fever,Troponin,116.6,ng/L,0.0,14.0,High,Routine,Emergency,Dr Thomas,2026-05-05
+P0015,E0015,83,Female,D64.9,Anemia,Creatinine,4.1,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Thomas,2026-05-06
+P0016,E0016,74,Female,E11.9,Type 2 diabetes,Lactate,1.0,mmol/L,0.5,2.2,Normal,Routine,Endocrinology,Dr Lee,2026-05-27
+P0017,E0017,63,Female,E11.9,Type 2 diabetes,Lactate,2.7,mmol/L,0.5,2.2,High,Routine,Endocrinology,Dr Brown,2026-05-14
+P0018,E0018,33,Female,I50.9,Heart failure,ALT,73.1,U/L,7.0,56.0,High,Routine,Cardiology,Dr Smith,2026-05-11
+P0019,E0019,18,Female,K76.9,Liver disease,Platelets,105.5,10^9/L,150.0,450.0,Low,Routine,Hepatology,Dr Wilson,2026-05-31
+P0020,E0020,25,Female,I10,Hypertension,AST,56.5,U/L,10.0,40.0,High,Routine,Cardiology,Dr Thomas,2026-05-30
+P0021,E0021,69,Male,J44.9,COPD,Potassium,4.1,mmol/L,3.5,5.1,Normal,Routine,Pulmonology,Dr Jones,2026-05-25
+P0022,E0022,78,Male,A41.9,Sepsis,AST,241.8,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-05-19
+P0023,E0023,25,Male,A41.9,Sepsis,Creatinine,5.0,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Jones,2026-05-05
+P0024,E0024,85,Male,N18.4,Chronic kidney disease,Hemoglobin,14.0,g/dL,12.0,16.0,Normal,Routine,Nephrology,Dr Thomas,2026-05-23
+P0025,E0025,40,Female,E11.9,Type 2 diabetes,WBC,10.2,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Adams,2026-05-28
+P0026,E0026,75,Female,K76.9,Liver disease,HbA1c,7.3,%,4.0,5.6,High,Routine,Hepatology,Dr Thomas,2026-06-03
+P0027,E0027,73,Female,N17.9,Acute kidney injury,HbA1c,7.7,%,4.0,5.6,High,Routine,ICU,Dr Adams,2026-05-05
+P0028,E0028,63,Female,E11.9,Type 2 diabetes,Hemoglobin,6.6,g/dL,12.0,16.0,Low,High Risk,Endocrinology,Dr Jones,2026-05-22
+P0029,E0029,80,Female,D64.9,Anemia,Creatinine,1.5,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Lee,2026-05-15
+P0030,E0030,22,Male,K76.9,Liver disease,Hemoglobin,13.7,g/dL,12.0,16.0,Normal,Routine,Hepatology,Dr Wilson,2026-05-15
+P0031,E0031,51,Male,J44.9,COPD,Creatinine,3.4,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Patel,2026-05-07
+P0032,E0032,84,Female,E11.9,Type 2 diabetes,HbA1c,8.2,%,4.0,5.6,High,High Risk,Endocrinology,Dr Smith,2026-05-17
+P0033,E0033,54,Female,I50.9,Heart failure,AST,304.2,U/L,10.0,40.0,High,Routine,Cardiology,Dr Lee,2026-05-04
+P0034,E0034,63,Female,J44.9,COPD,AST,124.5,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Wilson,2026-05-21
+P0035,E0035,30,Female,N17.9,Acute kidney injury,Troponin,79.4,ng/L,0.0,14.0,High,Routine,ICU,Dr Adams,2026-05-05
+P0036,E0036,88,Female,J44.9,COPD,Potassium,2.8,mmol/L,3.5,5.1,Low,Critical,Pulmonology,Dr Thomas,2026-05-12
+P0037,E0037,79,Female,I10,Hypertension,Potassium,5.9,mmol/L,3.5,5.1,High,Routine,Cardiology,Dr Jones,2026-05-09
+P0038,E0038,59,Male,I50.9,Heart failure,Lactate,2.7,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Lee,2026-05-29
+P0039,E0039,20,Female,K76.9,Liver disease,Platelets,420.0,10^9/L,150.0,450.0,Normal,Routine,Hepatology,Dr Lee,2026-05-13
+P0040,E0040,37,Male,I50.9,Heart failure,Troponin,111.0,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Patel,2026-05-21
+P0041,E0041,77,Male,I50.9,Heart failure,Lactate,6.0,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Jones,2026-05-25
+P0042,E0042,35,Male,N17.9,Acute kidney injury,AST,215.5,U/L,10.0,40.0,High,Routine,ICU,Dr Lee,2026-05-12
+P0043,E0043,62,Male,N18.4,Chronic kidney disease,Sodium,159.3,mmol/L,135.0,145.0,High,Routine,Nephrology,Dr Jones,2026-05-08
+P0044,E0044,61,Male,A41.9,Sepsis,Hemoglobin,13.3,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Brown,2026-05-17
+P0045,E0045,87,Female,E11.9,Type 2 diabetes,Creatinine,2.2,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Jones,2026-05-23
+P0046,E0046,18,Male,I50.9,Heart failure,Troponin,50.7,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Thomas,2026-05-24
+P0047,E0047,53,Female,I50.9,Heart failure,Lactate,2.6,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Patel,2026-05-11
+P0048,E0048,44,Male,J44.9,COPD,Troponin,31.3,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Thomas,2026-05-04
+P0049,E0049,22,Female,I10,Hypertension,HbA1c,10.9,%,4.0,5.6,High,High Risk,Cardiology,Dr Wilson,2026-05-30
+P0050,E0050,50,Male,A41.9,Sepsis,Glucose,158.3,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Wilson,2026-05-26
+P0051,E0051,22,Male,J44.9,COPD,HbA1c,6.6,%,4.0,5.6,High,Routine,Pulmonology,Dr Adams,2026-05-05
+P0052,E0052,49,Female,K76.9,Liver disease,AST,109.9,U/L,10.0,40.0,High,Routine,Hepatology,Dr Smith,2026-05-15
+P0053,E0053,22,Female,J44.9,COPD,AST,192.6,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Smith,2026-05-31
+P0054,E0054,73,Male,D64.9,Anemia,ALT,220.8,U/L,7.0,56.0,High,Routine,Internal Medicine,Dr Adams,2026-05-23
+P0055,E0055,66,Female,J44.9,COPD,Hemoglobin,15.9,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Jones,2026-05-10
+P0056,E0056,61,Female,A41.9,Sepsis,Hemoglobin,17.1,g/dL,12.0,16.0,High,Routine,Emergency,Dr Brown,2026-05-24
+P0057,E0057,23,Female,N18.4,Chronic kidney disease,Troponin,87.0,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Adams,2026-05-29
+P0058,E0058,69,Male,D64.9,Anemia,Platelets,641.8,10^9/L,150.0,450.0,High,Routine,Internal Medicine,Dr Jones,2026-06-01
+P0059,E0059,50,Male,D64.9,Anemia,Glucose,202.1,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Jones,2026-05-30
+P0060,E0060,36,Male,J44.9,COPD,Glucose,61.4,mg/dL,70.0,140.0,Low,Routine,Pulmonology,Dr Brown,2026-05-31
+P0061,E0061,55,Female,K76.9,Liver disease,AST,333.6,U/L,10.0,40.0,High,Routine,Hepatology,Dr Jones,2026-05-30
+P0062,E0062,22,Male,I10,Hypertension,AST,65.5,U/L,10.0,40.0,High,Routine,Cardiology,Dr Adams,2026-06-02
+P0063,E0063,76,Female,K76.9,Liver disease,HbA1c,5.9,%,4.0,5.6,High,Routine,Hepatology,Dr Smith,2026-06-01
+P0064,E0064,69,Female,I10,Hypertension,Platelets,231.2,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Adams,2026-05-06
+P0065,E0065,65,Male,N18.4,Chronic kidney disease,ALT,20.1,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Lee,2026-05-16
+P0066,E0066,90,Female,I50.9,Heart failure,Troponin,26.4,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Adams,2026-05-13
+P0067,E0067,47,Male,J44.9,COPD,ALT,326.1,U/L,7.0,56.0,High,Routine,Pulmonology,Dr Jones,2026-05-11
+P0068,E0068,67,Male,I10,Hypertension,Glucose,318.3,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Brown,2026-05-28
+P0069,E0069,71,Female,I10,Hypertension,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Adams,2026-05-31
+P0070,E0070,88,Female,I10,Hypertension,HbA1c,8.7,%,4.0,5.6,High,High Risk,Cardiology,Dr Lee,2026-05-31
+P0071,E0071,81,Female,R50.9,Fever,Sodium,134.8,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Wilson,2026-05-27
+P0072,E0072,34,Female,I10,Hypertension,Potassium,5.8,mmol/L,3.5,5.1,High,Routine,Cardiology,Dr Brown,2026-05-09
+P0073,E0073,47,Female,R50.9,Fever,Lactate,7.9,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Adams,2026-05-11
+P0074,E0074,34,Male,I10,Hypertension,Potassium,3.4,mmol/L,3.5,5.1,Low,Routine,Cardiology,Dr Smith,2026-05-18
+P0075,E0075,77,Female,I50.9,Heart failure,Sodium,138.2,mmol/L,135.0,145.0,Normal,Routine,Cardiology,Dr Jones,2026-05-07
+P0076,E0076,73,Female,I50.9,Heart failure,ALT,36.2,U/L,7.0,56.0,Normal,Routine,Cardiology,Dr Lee,2026-05-13
+P0077,E0077,80,Female,I50.9,Heart failure,Glucose,242.9,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Jones,2026-05-24
+P0078,E0078,82,Female,I10,Hypertension,WBC,17.0,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Brown,2026-05-12
+P0079,E0079,22,Male,J44.9,COPD,Lactate,8.4,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Brown,2026-05-11
+P0080,E0080,55,Male,R50.9,Fever,Lactate,1.2,mmol/L,0.5,2.2,Normal,Routine,Emergency,Dr Smith,2026-05-07
+P0081,E0081,69,Male,I50.9,Heart failure,Creatinine,4.9,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Smith,2026-05-10
+P0082,E0082,63,Male,J44.9,COPD,Platelets,450.4,10^9/L,150.0,450.0,High,Routine,Pulmonology,Dr Brown,2026-05-23
+P0083,E0083,44,Male,A41.9,Sepsis,Glucose,279.8,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Adams,2026-05-21
+P0084,E0084,52,Male,I10,Hypertension,Lactate,4.1,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Jones,2026-05-19
+P0085,E0085,69,Male,J44.9,COPD,Glucose,399.9,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Smith,2026-05-09
+P0086,E0086,50,Male,E11.9,Type 2 diabetes,AST,11.4,U/L,10.0,40.0,Normal,Routine,Endocrinology,Dr Brown,2026-05-31
+P0087,E0087,80,Female,D64.9,Anemia,Potassium,4.1,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Patel,2026-05-19
+P0088,E0088,18,Male,E11.9,Type 2 diabetes,Sodium,154.1,mmol/L,135.0,145.0,High,Routine,Endocrinology,Dr Lee,2026-05-09
+P0089,E0089,24,Female,E11.9,Type 2 diabetes,Troponin,41.4,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Jones,2026-05-28
+P0090,E0090,60,Male,R50.9,Fever,Sodium,136.3,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Thomas,2026-05-19
+P0091,E0091,29,Male,I50.9,Heart failure,Creatinine,5.9,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Smith,2026-05-07
+P0092,E0092,68,Male,R50.9,Fever,Hemoglobin,13.4,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Adams,2026-05-26
+P0093,E0093,29,Male,A41.9,Sepsis,Sodium,149.2,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Jones,2026-05-05
+P0094,E0094,40,Female,J44.9,COPD,Hemoglobin,11.0,g/dL,12.0,16.0,Low,Routine,Pulmonology,Dr Lee,2026-05-27
+P0095,E0095,66,Female,N18.4,Chronic kidney disease,Sodium,127.6,mmol/L,135.0,145.0,Low,Routine,Nephrology,Dr Wilson,2026-05-10
+P0096,E0096,47,Male,A41.9,Sepsis,Creatinine,6.1,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Adams,2026-05-09
+P0097,E0097,66,Male,K76.9,Liver disease,Glucose,199.6,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Adams,2026-05-16
+P0098,E0098,33,Male,D64.9,Anemia,AST,191.6,U/L,10.0,40.0,High,Routine,Internal Medicine,Dr Wilson,2026-05-06
+P0099,E0099,31,Female,R50.9,Fever,Sodium,136.7,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Adams,2026-05-29
+P0100,E0100,51,Female,N18.4,Chronic kidney disease,AST,294.3,U/L,10.0,40.0,High,Routine,Nephrology,Dr Patel,2026-05-11
+P0101,E0101,31,Male,A41.9,Sepsis,Lactate,5.6,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Lee,2026-05-05
+P0102,E0102,41,Female,K76.9,Liver disease,Hemoglobin,13.7,g/dL,12.0,16.0,Normal,Routine,Hepatology,Dr Lee,2026-05-16
+P0103,E0103,19,Female,K76.9,Liver disease,WBC,11.8,10^9/L,4.0,11.0,High,Routine,Hepatology,Dr Jones,2026-05-29
+P0104,E0104,71,Male,E11.9,Type 2 diabetes,Troponin,17.0,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Patel,2026-05-10
+P0105,E0105,57,Male,R50.9,Fever,Platelets,202.3,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Jones,2026-05-21
+P0106,E0106,24,Male,I10,Hypertension,HbA1c,10.5,%,4.0,5.6,High,High Risk,Cardiology,Dr Smith,2026-05-04
+P0107,E0107,57,Female,R50.9,Fever,Platelets,295.6,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Adams,2026-05-16
+P0108,E0108,47,Male,R50.9,Fever,Platelets,150.5,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Lee,2026-05-20
+P0109,E0109,45,Male,D64.9,Anemia,Glucose,293.0,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Brown,2026-05-24
+P0110,E0110,76,Female,A41.9,Sepsis,Lactate,1.7,mmol/L,0.5,2.2,Normal,Routine,Emergency,Dr Brown,2026-05-04
+P0111,E0111,54,Male,A41.9,Sepsis,Sodium,151.6,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Wilson,2026-05-26
+P0112,E0112,30,Male,A41.9,Sepsis,Platelets,73.0,10^9/L,150.0,450.0,Low,Routine,Emergency,Dr Wilson,2026-06-03
+P0113,E0113,57,Female,I10,Hypertension,HbA1c,9.7,%,4.0,5.6,High,High Risk,Cardiology,Dr Wilson,2026-05-09
+P0114,E0114,69,Male,N18.4,Chronic kidney disease,Creatinine,0.9,mg/dL,0.6,1.2,Normal,Routine,Nephrology,Dr Brown,2026-05-08
+P0115,E0115,38,Female,A41.9,Sepsis,Sodium,124.5,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Thomas,2026-05-27
+P0116,E0116,52,Female,I50.9,Heart failure,WBC,15.5,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Lee,2026-05-09
+P0117,E0117,28,Male,J44.9,COPD,Hemoglobin,16.2,g/dL,12.0,16.0,High,Routine,Pulmonology,Dr Brown,2026-05-18
+P0118,E0118,20,Female,R50.9,Fever,Creatinine,2.2,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Thomas,2026-05-23
+P0119,E0119,18,Female,R50.9,Fever,Lactate,8.4,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Smith,2026-05-16
+P0120,E0120,64,Female,A41.9,Sepsis,Lactate,0.9,mmol/L,0.5,2.2,Normal,Routine,Emergency,Dr Jones,2026-05-10
+P0121,E0121,76,Male,N18.4,Chronic kidney disease,Troponin,19.2,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Adams,2026-05-21
+P0122,E0122,48,Female,J44.9,COPD,HbA1c,8.7,%,4.0,5.6,High,High Risk,Pulmonology,Dr Jones,2026-05-11
+P0123,E0123,40,Female,E11.9,Type 2 diabetes,Glucose,126.5,mg/dL,70.0,140.0,Normal,Routine,Endocrinology,Dr Jones,2026-05-05
+P0124,E0124,27,Male,N17.9,Acute kidney injury,Lactate,1.3,mmol/L,0.5,2.2,Normal,Routine,ICU,Dr Patel,2026-06-02
+P0125,E0125,63,Female,A41.9,Sepsis,Platelets,115.6,10^9/L,150.0,450.0,Low,Routine,Emergency,Dr Wilson,2026-05-11
+P0126,E0126,37,Female,K76.9,Liver disease,Glucose,262.5,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Brown,2026-05-04
+P0127,E0127,52,Female,I10,Hypertension,Creatinine,0.5,mg/dL,0.6,1.2,Low,Routine,Cardiology,Dr Smith,2026-05-25
+P0128,E0128,57,Male,D64.9,Anemia,Hemoglobin,16.5,g/dL,12.0,16.0,High,Routine,Internal Medicine,Dr Lee,2026-05-28
+P0129,E0129,50,Female,J44.9,COPD,Glucose,185.3,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Brown,2026-06-01
+P0130,E0130,85,Male,K76.9,Liver disease,AST,306.7,U/L,10.0,40.0,High,Routine,Hepatology,Dr Thomas,2026-05-10
+P0131,E0131,90,Female,N17.9,Acute kidney injury,Troponin,39.2,ng/L,0.0,14.0,High,Routine,ICU,Dr Thomas,2026-05-26
+P0132,E0132,39,Male,A41.9,Sepsis,AST,64.4,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-06-03
+P0133,E0133,32,Female,D64.9,Anemia,Troponin,3.5,ng/L,0.0,14.0,Normal,Routine,Internal Medicine,Dr Wilson,2026-05-16
+P0134,E0134,36,Female,A41.9,Sepsis,Troponin,30.0,ng/L,0.0,14.0,High,Routine,Emergency,Dr Lee,2026-05-16
+P0135,E0135,54,Male,D64.9,Anemia,Potassium,4.9,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Brown,2026-06-03
+P0136,E0136,41,Male,I10,Hypertension,Sodium,150.0,mmol/L,135.0,145.0,High,Routine,Cardiology,Dr Wilson,2026-06-02
+P0137,E0137,70,Male,N18.4,Chronic kidney disease,AST,298.7,U/L,10.0,40.0,High,Routine,Nephrology,Dr Adams,2026-05-22
+P0138,E0138,20,Female,A41.9,Sepsis,Creatinine,4.2,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Smith,2026-06-02
+P0139,E0139,33,Female,I10,Hypertension,Troponin,79.5,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Jones,2026-05-17
+P0140,E0140,60,Female,R50.9,Fever,AST,54.2,U/L,10.0,40.0,High,Routine,Emergency,Dr Lee,2026-05-12
+P0141,E0141,84,Male,I10,Hypertension,Glucose,185.7,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Smith,2026-05-12
+P0142,E0142,71,Female,A41.9,Sepsis,Platelets,243.4,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Thomas,2026-05-09
+P0143,E0143,90,Male,D64.9,Anemia,HbA1c,10.6,%,4.0,5.6,High,High Risk,Internal Medicine,Dr Thomas,2026-06-01
+P0144,E0144,46,Female,N17.9,Acute kidney injury,WBC,28.0,10^9/L,4.0,11.0,High,Routine,ICU,Dr Adams,2026-05-11
+P0145,E0145,43,Male,R50.9,Fever,AST,53.3,U/L,10.0,40.0,High,Routine,Emergency,Dr Brown,2026-05-18
+P0146,E0146,60,Male,J44.9,COPD,Hemoglobin,8.9,g/dL,12.0,16.0,Low,High Risk,Pulmonology,Dr Jones,2026-05-06
+P0147,E0147,28,Male,D64.9,Anemia,Hemoglobin,8.9,g/dL,12.0,16.0,Low,High Risk,Internal Medicine,Dr Brown,2026-05-10
+P0148,E0148,33,Female,N17.9,Acute kidney injury,ALT,229.1,U/L,7.0,56.0,High,Routine,ICU,Dr Patel,2026-05-31
+P0149,E0149,28,Male,R50.9,Fever,HbA1c,7.4,%,4.0,5.6,High,Routine,Emergency,Dr Jones,2026-05-16
+P0150,E0150,52,Female,D64.9,Anemia,Hemoglobin,7.0,g/dL,12.0,16.0,Low,High Risk,Internal Medicine,Dr Smith,2026-05-24
+P0151,E0151,63,Male,N18.4,Chronic kidney disease,Glucose,235.7,mg/dL,70.0,140.0,High,Routine,Nephrology,Dr Jones,2026-05-17
+P0152,E0152,86,Male,I50.9,Heart failure,Hemoglobin,17.3,g/dL,12.0,16.0,High,Routine,Cardiology,Dr Thomas,2026-06-01
+P0153,E0153,82,Female,I10,Hypertension,WBC,2.9,10^9/L,4.0,11.0,Low,Routine,Cardiology,Dr Wilson,2026-06-02
+P0154,E0154,74,Female,J44.9,COPD,ALT,25.2,U/L,7.0,56.0,Normal,Routine,Pulmonology,Dr Patel,2026-05-13
+P0155,E0155,50,Female,R50.9,Fever,Potassium,5.8,mmol/L,3.5,5.1,High,Routine,Emergency,Dr Jones,2026-05-26
+P0156,E0156,42,Female,A41.9,Sepsis,Sodium,123.6,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Adams,2026-05-13
+P0157,E0157,67,Female,D64.9,Anemia,HbA1c,5.3,%,4.0,5.6,Normal,Routine,Internal Medicine,Dr Thomas,2026-05-19
+P0158,E0158,88,Male,D64.9,Anemia,AST,166.4,U/L,10.0,40.0,High,Routine,Internal Medicine,Dr Brown,2026-05-24
+P0159,E0159,53,Female,A41.9,Sepsis,Lactate,2.5,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Wilson,2026-05-07
+P0160,E0160,61,Male,A41.9,Sepsis,HbA1c,7.1,%,4.0,5.6,High,Routine,Emergency,Dr Lee,2026-05-12
+P0161,E0161,85,Male,J44.9,COPD,Glucose,210.7,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Jones,2026-05-08
+P0162,E0162,25,Male,I50.9,Heart failure,HbA1c,10.6,%,4.0,5.6,High,High Risk,Cardiology,Dr Wilson,2026-05-23
+P0163,E0163,30,Female,N18.4,Chronic kidney disease,Potassium,2.7,mmol/L,3.5,5.1,Low,Critical,Nephrology,Dr Wilson,2026-05-22
+P0164,E0164,80,Female,I50.9,Heart failure,HbA1c,4.9,%,4.0,5.6,Normal,Routine,Cardiology,Dr Smith,2026-05-26
+P0165,E0165,31,Male,A41.9,Sepsis,Glucose,58.1,mg/dL,70.0,140.0,Low,Routine,Emergency,Dr Patel,2026-05-31
+P0166,E0166,85,Female,I10,Hypertension,Hemoglobin,13.7,g/dL,12.0,16.0,Normal,Routine,Cardiology,Dr Brown,2026-05-13
+P0167,E0167,82,Male,N18.4,Chronic kidney disease,Potassium,5.7,mmol/L,3.5,5.1,High,Routine,Nephrology,Dr Wilson,2026-05-26
+P0168,E0168,49,Male,R50.9,Fever,Lactate,3.5,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Patel,2026-05-23
+P0169,E0169,54,Male,A41.9,Sepsis,AST,48.3,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-05-21
+P0170,E0170,86,Male,A41.9,Sepsis,HbA1c,8.3,%,4.0,5.6,High,High Risk,Emergency,Dr Adams,2026-05-22
+P0171,E0171,31,Female,A41.9,Sepsis,ALT,11.0,U/L,7.0,56.0,Normal,Routine,Emergency,Dr Jones,2026-05-29
+P0172,E0172,80,Male,D64.9,Anemia,Lactate,4.6,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Jones,2026-05-15
+P0173,E0173,40,Male,R50.9,Fever,Lactate,2.6,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Lee,2026-05-26
+P0174,E0174,85,Male,N18.4,Chronic kidney disease,Troponin,94.7,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Patel,2026-05-15
+P0175,E0175,80,Female,I50.9,Heart failure,Lactate,4.2,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Smith,2026-05-30
+P0176,E0176,85,Female,D64.9,Anemia,Creatinine,5.9,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Jones,2026-05-18
+P0177,E0177,63,Male,D64.9,Anemia,Hemoglobin,11.0,g/dL,12.0,16.0,Low,Routine,Internal Medicine,Dr Adams,2026-05-12
+P0178,E0178,56,Male,D64.9,Anemia,Glucose,287.1,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Smith,2026-05-28
+P0179,E0179,82,Female,R50.9,Fever,Creatinine,4.2,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Lee,2026-05-25
+P0180,E0180,33,Male,D64.9,Anemia,Creatinine,4.5,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Lee,2026-05-18
+P0181,E0181,63,Female,A41.9,Sepsis,Sodium,137.8,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Smith,2026-05-19
+P0182,E0182,49,Male,E11.9,Type 2 diabetes,ALT,51.0,U/L,7.0,56.0,Normal,Routine,Endocrinology,Dr Smith,2026-05-23
+P0183,E0183,70,Male,E11.9,Type 2 diabetes,Sodium,129.8,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Wilson,2026-05-11
+P0184,E0184,37,Male,D64.9,Anemia,Creatinine,6.5,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Lee,2026-05-10
+P0185,E0185,62,Female,J44.9,COPD,ALT,166.4,U/L,7.0,56.0,High,Routine,Pulmonology,Dr Wilson,2026-05-27
+P0186,E0186,73,Male,N17.9,Acute kidney injury,Troponin,22.2,ng/L,0.0,14.0,High,Routine,ICU,Dr Jones,2026-05-28
+P0187,E0187,89,Female,N17.9,Acute kidney injury,ALT,151.3,U/L,7.0,56.0,High,Routine,ICU,Dr Smith,2026-06-03
+P0188,E0188,30,Female,D64.9,Anemia,Creatinine,2.0,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Smith,2026-05-23
+P0189,E0189,51,Male,E11.9,Type 2 diabetes,Potassium,2.8,mmol/L,3.5,5.1,Low,Critical,Endocrinology,Dr Patel,2026-05-26
+P0190,E0190,49,Female,N17.9,Acute kidney injury,Hemoglobin,7.1,g/dL,12.0,16.0,Low,High Risk,ICU,Dr Jones,2026-05-13
+P0191,E0191,23,Male,A41.9,Sepsis,ALT,194.8,U/L,7.0,56.0,High,Routine,Emergency,Dr Brown,2026-05-16
+P0192,E0192,41,Female,E11.9,Type 2 diabetes,Creatinine,2.1,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Brown,2026-05-09
+P0193,E0193,83,Male,I50.9,Heart failure,Sodium,145.9,mmol/L,135.0,145.0,High,Routine,Cardiology,Dr Jones,2026-05-11
+P0194,E0194,81,Male,N18.4,Chronic kidney disease,HbA1c,10.5,%,4.0,5.6,High,High Risk,Nephrology,Dr Smith,2026-05-07
+P0195,E0195,36,Male,J44.9,COPD,Potassium,2.8,mmol/L,3.5,5.1,Low,Critical,Pulmonology,Dr Patel,2026-05-05
+P0196,E0196,80,Male,N17.9,Acute kidney injury,Creatinine,5.9,mg/dL,0.6,1.2,High,Routine,ICU,Dr Wilson,2026-05-18
+P0197,E0197,67,Female,D64.9,Anemia,Glucose,321.1,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Adams,2026-05-19
+P0198,E0198,50,Male,J44.9,COPD,AST,131.6,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Brown,2026-05-12
+P0199,E0199,86,Male,E11.9,Type 2 diabetes,Sodium,149.5,mmol/L,135.0,145.0,High,Routine,Endocrinology,Dr Patel,2026-05-22
+P0200,E0200,25,Female,N17.9,Acute kidney injury,Creatinine,2.6,mg/dL,0.6,1.2,High,Routine,ICU,Dr Brown,2026-05-05
+P0201,E0201,32,Female,J44.9,COPD,WBC,17.4,10^9/L,4.0,11.0,High,Routine,Pulmonology,Dr Adams,2026-05-14
+P0202,E0202,60,Female,N17.9,Acute kidney injury,Sodium,148.0,mmol/L,135.0,145.0,High,Routine,ICU,Dr Brown,2026-05-04
+P0203,E0203,68,Male,N18.4,Chronic kidney disease,Hemoglobin,16.4,g/dL,12.0,16.0,High,Routine,Nephrology,Dr Patel,2026-05-31
+P0204,E0204,81,Male,A41.9,Sepsis,Sodium,125.6,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Patel,2026-05-25
+P0205,E0205,43,Female,R50.9,Fever,ALT,261.6,U/L,7.0,56.0,High,Routine,Emergency,Dr Wilson,2026-05-26
+P0206,E0206,50,Male,N17.9,Acute kidney injury,ALT,92.4,U/L,7.0,56.0,High,Routine,ICU,Dr Wilson,2026-05-04
+P0207,E0207,58,Female,R50.9,Fever,Platelets,152.5,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Patel,2026-06-01
+P0208,E0208,72,Male,R50.9,Fever,Hemoglobin,8.0,g/dL,12.0,16.0,Low,High Risk,Emergency,Dr Jones,2026-05-10
+P0209,E0209,75,Male,D64.9,Anemia,HbA1c,4.8,%,4.0,5.6,Normal,Routine,Internal Medicine,Dr Lee,2026-05-28
+P0210,E0210,26,Female,I10,Hypertension,Sodium,149.9,mmol/L,135.0,145.0,High,Routine,Cardiology,Dr Smith,2026-05-28
+P0211,E0211,40,Male,I50.9,Heart failure,Troponin,115.0,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Jones,2026-05-27
+P0212,E0212,51,Male,E11.9,Type 2 diabetes,Troponin,50.7,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Adams,2026-05-08
+P0213,E0213,50,Male,N17.9,Acute kidney injury,AST,77.4,U/L,10.0,40.0,High,Routine,ICU,Dr Adams,2026-05-17
+P0214,E0214,47,Male,N18.4,Chronic kidney disease,HbA1c,10.9,%,4.0,5.6,High,High Risk,Nephrology,Dr Lee,2026-05-18
+P0215,E0215,63,Male,J44.9,COPD,Sodium,127.3,mmol/L,135.0,145.0,Low,Routine,Pulmonology,Dr Thomas,2026-06-01
+P0216,E0216,62,Male,E11.9,Type 2 diabetes,Glucose,84.6,mg/dL,70.0,140.0,Normal,Routine,Endocrinology,Dr Brown,2026-06-02
+P0217,E0217,74,Male,D64.9,Anemia,Sodium,155.0,mmol/L,135.0,145.0,High,Routine,Internal Medicine,Dr Thomas,2026-05-23
+P0218,E0218,73,Male,J44.9,COPD,HbA1c,8.4,%,4.0,5.6,High,High Risk,Pulmonology,Dr Wilson,2026-05-12
+P0219,E0219,56,Male,K76.9,Liver disease,Hemoglobin,16.3,g/dL,12.0,16.0,High,Routine,Hepatology,Dr Patel,2026-05-22
+P0220,E0220,55,Male,N17.9,Acute kidney injury,Lactate,5.2,mmol/L,0.5,2.2,High,Routine,ICU,Dr Brown,2026-05-26
+P0221,E0221,34,Male,E11.9,Type 2 diabetes,Sodium,121.7,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Lee,2026-05-14
+P0222,E0222,29,Male,J44.9,COPD,WBC,12.9,10^9/L,4.0,11.0,High,Routine,Pulmonology,Dr Brown,2026-05-27
+P0223,E0223,42,Male,A41.9,Sepsis,WBC,23.8,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Thomas,2026-05-30
+P0224,E0224,56,Male,J44.9,COPD,HbA1c,4.6,%,4.0,5.6,Normal,Routine,Pulmonology,Dr Patel,2026-05-13
+P0225,E0225,58,Male,N17.9,Acute kidney injury,HbA1c,10.2,%,4.0,5.6,High,High Risk,ICU,Dr Jones,2026-05-15
+P0226,E0226,23,Male,K76.9,Liver disease,Creatinine,6.2,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Wilson,2026-05-12
+P0227,E0227,29,Female,I10,Hypertension,Troponin,108.6,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Smith,2026-05-07
+P0228,E0228,39,Female,A41.9,Sepsis,Troponin,104.2,ng/L,0.0,14.0,High,Routine,Emergency,Dr Patel,2026-05-28
+P0229,E0229,80,Female,J44.9,COPD,HbA1c,7.8,%,4.0,5.6,High,Routine,Pulmonology,Dr Jones,2026-05-22
+P0230,E0230,60,Female,I10,Hypertension,Lactate,3.7,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Thomas,2026-05-06
+P0231,E0231,85,Female,J44.9,COPD,Creatinine,1.7,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Patel,2026-05-05
+P0232,E0232,69,Female,E11.9,Type 2 diabetes,HbA1c,6.1,%,4.0,5.6,High,Routine,Endocrinology,Dr Patel,2026-05-05
+P0233,E0233,43,Female,D64.9,Anemia,Lactate,3.0,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Thomas,2026-05-16
+P0234,E0234,24,Male,K76.9,Liver disease,WBC,5.8,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Jones,2026-05-06
+P0235,E0235,61,Female,N18.4,Chronic kidney disease,ALT,153.8,U/L,7.0,56.0,High,Routine,Nephrology,Dr Patel,2026-06-01
+P0236,E0236,50,Male,E11.9,Type 2 diabetes,Creatinine,5.2,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Smith,2026-05-06
+P0237,E0237,72,Male,I10,Hypertension,Platelets,498.2,10^9/L,150.0,450.0,High,Routine,Cardiology,Dr Lee,2026-05-08
+P0238,E0238,71,Male,A41.9,Sepsis,Hemoglobin,17.0,g/dL,12.0,16.0,High,Routine,Emergency,Dr Adams,2026-05-27
+P0239,E0239,34,Male,N18.4,Chronic kidney disease,Potassium,5.4,mmol/L,3.5,5.1,High,Routine,Nephrology,Dr Wilson,2026-05-20
+P0240,E0240,32,Female,I50.9,Heart failure,Platelets,488.7,10^9/L,150.0,450.0,High,Routine,Cardiology,Dr Jones,2026-05-09
+P0241,E0241,83,Male,N17.9,Acute kidney injury,ALT,363.6,U/L,7.0,56.0,High,Routine,ICU,Dr Lee,2026-05-25
+P0242,E0242,76,Female,R50.9,Fever,Lactate,5.2,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Jones,2026-06-01
+P0243,E0243,44,Female,N18.4,Chronic kidney disease,Glucose,167.4,mg/dL,70.0,140.0,High,Routine,Nephrology,Dr Jones,2026-05-24
+P0244,E0244,62,Female,R50.9,Fever,Hemoglobin,17.4,g/dL,12.0,16.0,High,Routine,Emergency,Dr Smith,2026-05-20
+P0245,E0245,61,Male,E11.9,Type 2 diabetes,Sodium,119.9,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Patel,2026-05-13
+P0246,E0246,62,Male,A41.9,Sepsis,Lactate,3.4,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Patel,2026-05-17
+P0247,E0247,85,Male,I10,Hypertension,WBC,13.0,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Jones,2026-05-29
+P0248,E0248,56,Female,E11.9,Type 2 diabetes,Sodium,151.2,mmol/L,135.0,145.0,High,Routine,Endocrinology,Dr Lee,2026-05-22
+P0249,E0249,72,Male,N17.9,Acute kidney injury,Potassium,6.7,mmol/L,3.5,5.1,High,Critical,ICU,Dr Jones,2026-05-15
+P0250,E0250,50,Female,R50.9,Fever,Potassium,6.5,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Brown,2026-05-19
+P0251,E0251,47,Female,J44.9,COPD,Creatinine,4.1,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Thomas,2026-05-06
+P0252,E0252,20,Male,E11.9,Type 2 diabetes,HbA1c,8.3,%,4.0,5.6,High,High Risk,Endocrinology,Dr Thomas,2026-05-10
+P0253,E0253,28,Male,I10,Hypertension,WBC,6.2,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Jones,2026-05-10
+P0254,E0254,31,Male,J44.9,COPD,AST,105.1,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Patel,2026-05-13
+P0255,E0255,82,Female,E11.9,Type 2 diabetes,WBC,10.3,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Smith,2026-05-27
+P0256,E0256,51,Female,J44.9,COPD,WBC,6.5,10^9/L,4.0,11.0,Normal,Routine,Pulmonology,Dr Smith,2026-05-20
+P0257,E0257,48,Male,A41.9,Sepsis,Troponin,104.9,ng/L,0.0,14.0,High,Routine,Emergency,Dr Lee,2026-06-01
+P0258,E0258,87,Male,D64.9,Anemia,Glucose,85.6,mg/dL,70.0,140.0,Normal,Routine,Internal Medicine,Dr Lee,2026-05-10
+P0259,E0259,25,Female,A41.9,Sepsis,AST,257.9,U/L,10.0,40.0,High,Routine,Emergency,Dr Brown,2026-06-03
+P0260,E0260,73,Female,D64.9,Anemia,HbA1c,6.1,%,4.0,5.6,High,Routine,Internal Medicine,Dr Jones,2026-05-05
+P0261,E0261,78,Male,N17.9,Acute kidney injury,Troponin,94.2,ng/L,0.0,14.0,High,Routine,ICU,Dr Brown,2026-05-28
+P0262,E0262,55,Male,D64.9,Anemia,Troponin,82.8,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Jones,2026-05-24
+P0263,E0263,42,Female,K76.9,Liver disease,Sodium,159.2,mmol/L,135.0,145.0,High,Routine,Hepatology,Dr Jones,2026-05-13
+P0264,E0264,32,Female,D64.9,Anemia,Glucose,394.4,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Thomas,2026-05-05
+P0265,E0265,36,Male,I50.9,Heart failure,Sodium,142.2,mmol/L,135.0,145.0,Normal,Routine,Cardiology,Dr Patel,2026-06-02
+P0266,E0266,37,Female,A41.9,Sepsis,Troponin,14.1,ng/L,0.0,14.0,High,Routine,Emergency,Dr Wilson,2026-06-02
+P0267,E0267,58,Female,E11.9,Type 2 diabetes,ALT,127.8,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Patel,2026-05-15
+P0268,E0268,28,Male,K76.9,Liver disease,Sodium,133.6,mmol/L,135.0,145.0,Low,Routine,Hepatology,Dr Brown,2026-05-07
+P0269,E0269,49,Male,R50.9,Fever,Hemoglobin,15.8,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Smith,2026-05-26
+P0270,E0270,29,Male,R50.9,Fever,WBC,26.7,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Smith,2026-05-17
+P0271,E0271,84,Male,A41.9,Sepsis,Lactate,6.6,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Lee,2026-05-14
+P0272,E0272,39,Male,N18.4,Chronic kidney disease,AST,155.2,U/L,10.0,40.0,High,Routine,Nephrology,Dr Lee,2026-05-22
+P0273,E0273,66,Male,R50.9,Fever,HbA1c,5.1,%,4.0,5.6,Normal,Routine,Emergency,Dr Patel,2026-05-27
+P0274,E0274,57,Male,A41.9,Sepsis,Glucose,89.5,mg/dL,70.0,140.0,Normal,Routine,Emergency,Dr Thomas,2026-05-21
+P0275,E0275,54,Male,I50.9,Heart failure,Troponin,55.8,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Patel,2026-05-13
+P0276,E0276,29,Male,E11.9,Type 2 diabetes,ALT,335.0,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Patel,2026-05-27
+P0277,E0277,20,Female,N18.4,Chronic kidney disease,WBC,20.2,10^9/L,4.0,11.0,High,Routine,Nephrology,Dr Lee,2026-06-02
+P0278,E0278,90,Male,A41.9,Sepsis,Platelets,210.5,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Jones,2026-05-18
+P0279,E0279,20,Female,I50.9,Heart failure,ALT,27.3,U/L,7.0,56.0,Normal,Routine,Cardiology,Dr Lee,2026-06-03
+P0280,E0280,78,Female,N17.9,Acute kidney injury,AST,240.8,U/L,10.0,40.0,High,Routine,ICU,Dr Thomas,2026-05-08
+P0281,E0281,20,Male,N18.4,Chronic kidney disease,Sodium,123.9,mmol/L,135.0,145.0,Low,Routine,Nephrology,Dr Patel,2026-05-13
+P0282,E0282,80,Male,J44.9,COPD,Sodium,128.4,mmol/L,135.0,145.0,Low,Routine,Pulmonology,Dr Wilson,2026-05-13
+P0283,E0283,74,Male,I10,Hypertension,Platelets,74.6,10^9/L,150.0,450.0,Low,Routine,Cardiology,Dr Smith,2026-05-24
+P0284,E0284,33,Male,I10,Hypertension,Creatinine,1.1,mg/dL,0.6,1.2,Normal,Routine,Cardiology,Dr Thomas,2026-05-23
+P0285,E0285,19,Male,I10,Hypertension,HbA1c,6.9,%,4.0,5.6,High,Routine,Cardiology,Dr Patel,2026-05-22
+P0286,E0286,41,Male,N17.9,Acute kidney injury,WBC,15.2,10^9/L,4.0,11.0,High,Routine,ICU,Dr Brown,2026-05-28
+P0287,E0287,21,Male,E11.9,Type 2 diabetes,Platelets,433.0,10^9/L,150.0,450.0,Normal,Routine,Endocrinology,Dr Adams,2026-05-08
+P0288,E0288,26,Male,K76.9,Liver disease,HbA1c,8.1,%,4.0,5.6,High,High Risk,Hepatology,Dr Adams,2026-06-03
+P0289,E0289,55,Female,D64.9,Anemia,Platelets,607.7,10^9/L,150.0,450.0,High,Routine,Internal Medicine,Dr Smith,2026-05-22
+P0290,E0290,26,Female,J44.9,COPD,Creatinine,5.3,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Brown,2026-06-01
+P0291,E0291,60,Female,A41.9,Sepsis,WBC,9.2,10^9/L,4.0,11.0,Normal,Routine,Emergency,Dr Adams,2026-05-31
+P0292,E0292,89,Male,D64.9,Anemia,Potassium,3.8,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Smith,2026-05-30
+P0293,E0293,66,Female,K76.9,Liver disease,ALT,5.1,U/L,7.0,56.0,Low,Routine,Hepatology,Dr Jones,2026-06-03
+P0294,E0294,23,Female,N18.4,Chronic kidney disease,Creatinine,1.7,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Wilson,2026-05-26
+P0295,E0295,59,Male,R50.9,Fever,Creatinine,4.4,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Wilson,2026-05-05
+P0296,E0296,52,Female,I50.9,Heart failure,Platelets,578.0,10^9/L,150.0,450.0,High,Routine,Cardiology,Dr Thomas,2026-05-29
+P0297,E0297,57,Male,E11.9,Type 2 diabetes,ALT,271.3,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Adams,2026-05-13
+P0298,E0298,18,Female,R50.9,Fever,Platelets,204.7,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Smith,2026-06-02
+P0299,E0299,60,Male,J44.9,COPD,Sodium,157.4,mmol/L,135.0,145.0,High,Routine,Pulmonology,Dr Jones,2026-05-21
+P0300,E0300,31,Male,R50.9,Fever,AST,233.1,U/L,10.0,40.0,High,Routine,Emergency,Dr Thomas,2026-05-23
+P0301,E0301,35,Male,K76.9,Liver disease,Platelets,98.5,10^9/L,150.0,450.0,Low,Routine,Hepatology,Dr Lee,2026-05-25
+P0302,E0302,44,Female,A41.9,Sepsis,Platelets,282.5,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Brown,2026-05-22
+P0303,E0303,70,Male,A41.9,Sepsis,Glucose,142.9,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Smith,2026-05-17
+P0304,E0304,29,Male,N18.4,Chronic kidney disease,Creatinine,3.8,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Thomas,2026-05-04
+P0305,E0305,24,Male,J44.9,COPD,Potassium,3.6,mmol/L,3.5,5.1,Normal,Routine,Pulmonology,Dr Adams,2026-05-06
+P0306,E0306,70,Female,K76.9,Liver disease,WBC,12.3,10^9/L,4.0,11.0,High,Routine,Hepatology,Dr Patel,2026-05-29
+P0307,E0307,22,Female,E11.9,Type 2 diabetes,Creatinine,1.6,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Adams,2026-05-30
+P0308,E0308,33,Male,N17.9,Acute kidney injury,Creatinine,3.7,mg/dL,0.6,1.2,High,Routine,ICU,Dr Wilson,2026-05-15
+P0309,E0309,18,Female,D64.9,Anemia,Sodium,118.3,mmol/L,135.0,145.0,Low,Routine,Internal Medicine,Dr Thomas,2026-05-09
+P0310,E0310,55,Male,A41.9,Sepsis,Troponin,109.3,ng/L,0.0,14.0,High,Routine,Emergency,Dr Adams,2026-06-03
+P0311,E0311,40,Male,E11.9,Type 2 diabetes,Sodium,149.8,mmol/L,135.0,145.0,High,Routine,Endocrinology,Dr Lee,2026-06-01
+P0312,E0312,51,Female,I50.9,Heart failure,AST,62.2,U/L,10.0,40.0,High,Routine,Cardiology,Dr Adams,2026-06-01
+P0313,E0313,20,Male,A41.9,Sepsis,Hemoglobin,15.0,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Jones,2026-05-15
+P0314,E0314,24,Male,N18.4,Chronic kidney disease,HbA1c,8.3,%,4.0,5.6,High,High Risk,Nephrology,Dr Smith,2026-05-11
+P0315,E0315,50,Female,R50.9,Fever,Platelets,99.7,10^9/L,150.0,450.0,Low,Routine,Emergency,Dr Patel,2026-05-20
+P0316,E0316,54,Male,I10,Hypertension,AST,139.3,U/L,10.0,40.0,High,Routine,Cardiology,Dr Patel,2026-05-23
+P0317,E0317,64,Female,N17.9,Acute kidney injury,Platelets,527.0,10^9/L,150.0,450.0,High,Routine,ICU,Dr Adams,2026-05-24
+P0318,E0318,86,Female,J44.9,COPD,Potassium,3.2,mmol/L,3.5,5.1,Low,Routine,Pulmonology,Dr Brown,2026-06-02
+P0319,E0319,87,Female,K76.9,Liver disease,Potassium,2.8,mmol/L,3.5,5.1,Low,Critical,Hepatology,Dr Jones,2026-05-04
+P0320,E0320,82,Male,I50.9,Heart failure,Glucose,295.3,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Patel,2026-05-05
+P0321,E0321,63,Female,A41.9,Sepsis,AST,341.9,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-05-07
+P0322,E0322,90,Female,R50.9,Fever,Sodium,151.1,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Adams,2026-05-14
+P0323,E0323,26,Male,N18.4,Chronic kidney disease,AST,263.3,U/L,10.0,40.0,High,Routine,Nephrology,Dr Smith,2026-05-13
+P0324,E0324,68,Male,N18.4,Chronic kidney disease,Glucose,110.0,mg/dL,70.0,140.0,Normal,Routine,Nephrology,Dr Thomas,2026-05-20
+P0325,E0325,80,Male,I10,Hypertension,Glucose,186.9,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Brown,2026-05-15
+P0326,E0326,22,Female,N18.4,Chronic kidney disease,Glucose,121.8,mg/dL,70.0,140.0,Normal,Routine,Nephrology,Dr Smith,2026-05-18
+P0327,E0327,65,Female,D64.9,Anemia,Potassium,3.9,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Patel,2026-05-24
+P0328,E0328,52,Male,I10,Hypertension,Potassium,2.6,mmol/L,3.5,5.1,Low,Critical,Cardiology,Dr Lee,2026-05-26
+P0329,E0329,79,Male,K76.9,Liver disease,Creatinine,4.2,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Thomas,2026-05-19
+P0330,E0330,33,Female,K76.9,Liver disease,Glucose,257.1,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Lee,2026-05-17
+P0331,E0331,86,Male,I10,Hypertension,ALT,215.5,U/L,7.0,56.0,High,Routine,Cardiology,Dr Adams,2026-05-09
+P0332,E0332,73,Female,N17.9,Acute kidney injury,Creatinine,6.2,mg/dL,0.6,1.2,High,Routine,ICU,Dr Thomas,2026-05-29
+P0333,E0333,41,Male,I50.9,Heart failure,Hemoglobin,17.3,g/dL,12.0,16.0,High,Routine,Cardiology,Dr Jones,2026-05-15
+P0334,E0334,36,Male,A41.9,Sepsis,Glucose,166.1,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Brown,2026-05-06
+P0335,E0335,77,Male,R50.9,Fever,Platelets,402.4,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Jones,2026-05-18
+P0336,E0336,79,Male,R50.9,Fever,Potassium,5.9,mmol/L,3.5,5.1,High,Routine,Emergency,Dr Patel,2026-05-22
+P0337,E0337,78,Female,K76.9,Liver disease,Platelets,261.4,10^9/L,150.0,450.0,Normal,Routine,Hepatology,Dr Jones,2026-06-01
+P0338,E0338,46,Male,R50.9,Fever,HbA1c,6.4,%,4.0,5.6,High,Routine,Emergency,Dr Brown,2026-05-27
+P0339,E0339,38,Male,E11.9,Type 2 diabetes,Creatinine,6.2,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Brown,2026-05-06
+P0340,E0340,28,Male,I50.9,Heart failure,Platelets,43.6,10^9/L,150.0,450.0,Low,Routine,Cardiology,Dr Lee,2026-05-27
+P0341,E0341,55,Male,D64.9,Anemia,ALT,154.4,U/L,7.0,56.0,High,Routine,Internal Medicine,Dr Thomas,2026-05-17
+P0342,E0342,70,Female,N17.9,Acute kidney injury,HbA1c,9.8,%,4.0,5.6,High,High Risk,ICU,Dr Smith,2026-05-17
+P0343,E0343,71,Male,I50.9,Heart failure,Sodium,132.2,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Lee,2026-05-30
+P0344,E0344,23,Male,K76.9,Liver disease,HbA1c,7.8,%,4.0,5.6,High,Routine,Hepatology,Dr Thomas,2026-05-09
+P0345,E0345,44,Female,D64.9,Anemia,Lactate,8.1,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Brown,2026-05-06
+P0346,E0346,51,Female,N18.4,Chronic kidney disease,HbA1c,4.5,%,4.0,5.6,Normal,Routine,Nephrology,Dr Thomas,2026-05-13
+P0347,E0347,56,Female,I10,Hypertension,Sodium,132.0,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Jones,2026-05-13
+P0348,E0348,78,Male,N18.4,Chronic kidney disease,HbA1c,4.9,%,4.0,5.6,Normal,Routine,Nephrology,Dr Patel,2026-06-02
+P0349,E0349,81,Female,N18.4,Chronic kidney disease,WBC,8.4,10^9/L,4.0,11.0,Normal,Routine,Nephrology,Dr Adams,2026-05-11
+P0350,E0350,56,Female,E11.9,Type 2 diabetes,Troponin,96.5,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Adams,2026-05-12
+P0351,E0351,33,Male,N17.9,Acute kidney injury,WBC,3.2,10^9/L,4.0,11.0,Low,Routine,ICU,Dr Smith,2026-05-24
+P0352,E0352,43,Male,I10,Hypertension,Sodium,123.6,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Patel,2026-05-05
+P0353,E0353,59,Female,R50.9,Fever,Glucose,401.6,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Jones,2026-05-07
+P0354,E0354,90,Male,E11.9,Type 2 diabetes,Lactate,6.0,mmol/L,0.5,2.2,High,Routine,Endocrinology,Dr Thomas,2026-05-17
+P0355,E0355,50,Female,N18.4,Chronic kidney disease,Hemoglobin,13.7,g/dL,12.0,16.0,Normal,Routine,Nephrology,Dr Patel,2026-05-24
+P0356,E0356,81,Female,N17.9,Acute kidney injury,Creatinine,0.9,mg/dL,0.6,1.2,Normal,Routine,ICU,Dr Brown,2026-05-26
+P0357,E0357,86,Female,R50.9,Fever,ALT,248.6,U/L,7.0,56.0,High,Routine,Emergency,Dr Lee,2026-05-29
+P0358,E0358,77,Male,R50.9,Fever,Potassium,5.7,mmol/L,3.5,5.1,High,Routine,Emergency,Dr Jones,2026-05-20
+P0359,E0359,83,Male,N18.4,Chronic kidney disease,Creatinine,1.8,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Adams,2026-05-21
+P0360,E0360,79,Female,A41.9,Sepsis,Lactate,2.4,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-05-25
+P0361,E0361,67,Male,A41.9,Sepsis,HbA1c,10.7,%,4.0,5.6,High,High Risk,Emergency,Dr Patel,2026-05-12
+P0362,E0362,33,Female,D64.9,Anemia,Glucose,202.6,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Jones,2026-05-18
+P0363,E0363,78,Male,J44.9,COPD,Troponin,57.7,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Lee,2026-05-12
+P0364,E0364,77,Male,A41.9,Sepsis,AST,204.6,U/L,10.0,40.0,High,Routine,Emergency,Dr Patel,2026-06-01
+P0365,E0365,78,Male,E11.9,Type 2 diabetes,Lactate,0.5,mmol/L,0.5,2.2,Normal,Routine,Endocrinology,Dr Lee,2026-05-22
+P0366,E0366,77,Male,A41.9,Sepsis,Sodium,141.2,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Smith,2026-05-25
+P0367,E0367,68,Male,A41.9,Sepsis,Troponin,10.2,ng/L,0.0,14.0,Normal,Routine,Emergency,Dr Lee,2026-05-25
+P0368,E0368,74,Male,E11.9,Type 2 diabetes,AST,198.0,U/L,10.0,40.0,High,Routine,Endocrinology,Dr Wilson,2026-05-27
+P0369,E0369,58,Female,K76.9,Liver disease,ALT,373.2,U/L,7.0,56.0,High,Routine,Hepatology,Dr Smith,2026-05-20
+P0370,E0370,77,Male,K76.9,Liver disease,Hemoglobin,10.6,g/dL,12.0,16.0,Low,Routine,Hepatology,Dr Adams,2026-05-29
+P0371,E0371,87,Female,J44.9,COPD,Lactate,3.8,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Jones,2026-05-16
+P0372,E0372,50,Female,N17.9,Acute kidney injury,HbA1c,4.6,%,4.0,5.6,Normal,Routine,ICU,Dr Jones,2026-05-22
+P0373,E0373,30,Female,E11.9,Type 2 diabetes,Glucose,339.9,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Lee,2026-05-06
+P0374,E0374,26,Female,E11.9,Type 2 diabetes,ALT,243.1,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Adams,2026-05-21
+P0375,E0375,70,Female,N18.4,Chronic kidney disease,Troponin,21.5,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Smith,2026-05-08
+P0376,E0376,61,Male,I50.9,Heart failure,Troponin,90.8,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Jones,2026-06-03
+P0377,E0377,24,Female,N17.9,Acute kidney injury,Glucose,250.4,mg/dL,70.0,140.0,High,Routine,ICU,Dr Adams,2026-05-05
+P0378,E0378,69,Female,R50.9,Fever,Hemoglobin,7.1,g/dL,12.0,16.0,Low,High Risk,Emergency,Dr Brown,2026-05-21
+P0379,E0379,56,Female,J44.9,COPD,ALT,133.5,U/L,7.0,56.0,High,Routine,Pulmonology,Dr Jones,2026-05-31
+P0380,E0380,88,Female,I10,Hypertension,WBC,17.9,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Adams,2026-05-14
+P0381,E0381,49,Female,N18.4,Chronic kidney disease,AST,34.8,U/L,10.0,40.0,Normal,Routine,Nephrology,Dr Patel,2026-05-27
+P0382,E0382,57,Female,I10,Hypertension,Glucose,131.9,mg/dL,70.0,140.0,Normal,Routine,Cardiology,Dr Brown,2026-05-30
+P0383,E0383,62,Male,N18.4,Chronic kidney disease,ALT,19.6,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Adams,2026-05-04
+P0384,E0384,74,Male,I10,Hypertension,Troponin,65.5,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Thomas,2026-06-03
+P0385,E0385,85,Female,R50.9,Fever,Hemoglobin,10.0,g/dL,12.0,16.0,Low,Routine,Emergency,Dr Adams,2026-05-04
+P0386,E0386,61,Female,N18.4,Chronic kidney disease,Troponin,75.1,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Thomas,2026-06-01
+P0387,E0387,83,Male,A41.9,Sepsis,ALT,258.5,U/L,7.0,56.0,High,Routine,Emergency,Dr Brown,2026-05-31
+P0388,E0388,74,Male,J44.9,COPD,Troponin,23.9,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Lee,2026-05-08
+P0389,E0389,75,Female,N17.9,Acute kidney injury,Potassium,4.2,mmol/L,3.5,5.1,Normal,Routine,ICU,Dr Patel,2026-06-01
+P0390,E0390,77,Female,A41.9,Sepsis,WBC,17.1,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Thomas,2026-06-02
+P0391,E0391,36,Female,D64.9,Anemia,Potassium,6.8,mmol/L,3.5,5.1,High,Critical,Internal Medicine,Dr Wilson,2026-05-30
+P0392,E0392,37,Female,R50.9,Fever,Potassium,2.9,mmol/L,3.5,5.1,Low,Critical,Emergency,Dr Thomas,2026-05-26
+P0393,E0393,51,Male,N17.9,Acute kidney injury,WBC,9.0,10^9/L,4.0,11.0,Normal,Routine,ICU,Dr Wilson,2026-05-09
+P0394,E0394,29,Female,I10,Hypertension,Hemoglobin,15.8,g/dL,12.0,16.0,Normal,Routine,Cardiology,Dr Thomas,2026-05-23
+P0395,E0395,57,Female,I10,Hypertension,Sodium,121.6,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Jones,2026-05-12
+P0396,E0396,89,Female,R50.9,Fever,Sodium,122.9,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Smith,2026-05-13
+P0397,E0397,23,Female,I50.9,Heart failure,Glucose,245.0,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Wilson,2026-05-30
+P0398,E0398,44,Male,R50.9,Fever,Hemoglobin,13.2,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Lee,2026-05-24
+P0399,E0399,43,Male,N18.4,Chronic kidney disease,ALT,26.5,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Brown,2026-05-28
+P0400,E0400,44,Female,A41.9,Sepsis,Sodium,156.1,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Jones,2026-05-09
+P0401,E0401,89,Female,N18.4,Chronic kidney disease,Sodium,134.2,mmol/L,135.0,145.0,Low,Routine,Nephrology,Dr Brown,2026-05-26
+P0402,E0402,44,Male,E11.9,Type 2 diabetes,Platelets,535.2,10^9/L,150.0,450.0,High,Routine,Endocrinology,Dr Patel,2026-05-09
+P0403,E0403,56,Male,D64.9,Anemia,Troponin,69.0,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Brown,2026-05-13
+P0404,E0404,46,Female,N18.4,Chronic kidney disease,Troponin,62.2,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Patel,2026-05-05
+P0405,E0405,82,Male,N17.9,Acute kidney injury,Creatinine,5.2,mg/dL,0.6,1.2,High,Routine,ICU,Dr Smith,2026-05-08
+P0406,E0406,76,Female,N17.9,Acute kidney injury,Glucose,153.5,mg/dL,70.0,140.0,High,Routine,ICU,Dr Thomas,2026-05-30
+P0407,E0407,68,Female,J44.9,COPD,Platelets,432.4,10^9/L,150.0,450.0,Normal,Routine,Pulmonology,Dr Thomas,2026-05-04
+P0408,E0408,28,Male,E11.9,Type 2 diabetes,HbA1c,6.0,%,4.0,5.6,High,Routine,Endocrinology,Dr Patel,2026-05-18
+P0409,E0409,42,Female,D64.9,Anemia,Potassium,2.9,mmol/L,3.5,5.1,Low,Critical,Internal Medicine,Dr Thomas,2026-05-29
+P0410,E0410,55,Female,J44.9,COPD,Glucose,159.7,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Patel,2026-05-11
+P0411,E0411,83,Male,A41.9,Sepsis,Potassium,6.5,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Brown,2026-05-20
+P0412,E0412,57,Female,N17.9,Acute kidney injury,ALT,246.3,U/L,7.0,56.0,High,Routine,ICU,Dr Wilson,2026-05-29
+P0413,E0413,77,Male,A41.9,Sepsis,Glucose,184.9,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Adams,2026-05-27
+P0414,E0414,77,Male,J44.9,COPD,Potassium,5.2,mmol/L,3.5,5.1,High,Routine,Pulmonology,Dr Smith,2026-05-04
+P0415,E0415,74,Female,J44.9,COPD,HbA1c,8.5,%,4.0,5.6,High,High Risk,Pulmonology,Dr Lee,2026-05-07
+P0416,E0416,79,Female,E11.9,Type 2 diabetes,WBC,26.5,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Lee,2026-05-21
+P0417,E0417,82,Male,J44.9,COPD,Hemoglobin,14.7,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Thomas,2026-05-08
+P0418,E0418,59,Female,D64.9,Anemia,HbA1c,10.0,%,4.0,5.6,High,High Risk,Internal Medicine,Dr Wilson,2026-05-23
+P0419,E0419,22,Female,N17.9,Acute kidney injury,Lactate,7.6,mmol/L,0.5,2.2,High,Routine,ICU,Dr Wilson,2026-05-10
+P0420,E0420,45,Female,I50.9,Heart failure,Sodium,118.8,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Smith,2026-05-26
+P0421,E0421,82,Female,I10,Hypertension,Hemoglobin,7.1,g/dL,12.0,16.0,Low,High Risk,Cardiology,Dr Smith,2026-05-20
+P0422,E0422,74,Male,A41.9,Sepsis,Troponin,59.7,ng/L,0.0,14.0,High,Routine,Emergency,Dr Wilson,2026-05-17
+P0423,E0423,80,Female,N17.9,Acute kidney injury,ALT,73.8,U/L,7.0,56.0,High,Routine,ICU,Dr Wilson,2026-05-29
+P0424,E0424,58,Male,I10,Hypertension,WBC,4.5,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Patel,2026-05-08
+P0425,E0425,41,Female,A41.9,Sepsis,Hemoglobin,14.8,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Adams,2026-05-23
+P0426,E0426,55,Male,J44.9,COPD,Potassium,3.0,mmol/L,3.5,5.1,Low,Critical,Pulmonology,Dr Thomas,2026-05-20
+P0427,E0427,20,Female,N17.9,Acute kidney injury,Troponin,66.2,ng/L,0.0,14.0,High,Routine,ICU,Dr Thomas,2026-05-26
+P0428,E0428,26,Female,J44.9,COPD,Hemoglobin,15.8,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Smith,2026-05-23
+P0429,E0429,84,Male,I10,Hypertension,Troponin,5.5,ng/L,0.0,14.0,Normal,Routine,Cardiology,Dr Thomas,2026-05-28
+P0430,E0430,36,Female,A41.9,Sepsis,WBC,19.9,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Smith,2026-05-17
+P0431,E0431,35,Male,I10,Hypertension,Troponin,95.3,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Thomas,2026-05-24
+P0432,E0432,87,Female,D64.9,Anemia,ALT,384.7,U/L,7.0,56.0,High,Routine,Internal Medicine,Dr Wilson,2026-05-09
+P0433,E0433,47,Female,K76.9,Liver disease,Potassium,4.3,mmol/L,3.5,5.1,Normal,Routine,Hepatology,Dr Jones,2026-05-25
+P0434,E0434,30,Male,I10,Hypertension,Platelets,398.9,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Thomas,2026-06-01
+P0435,E0435,46,Male,I50.9,Heart failure,Troponin,44.3,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Thomas,2026-05-09
+P0436,E0436,62,Female,N18.4,Chronic kidney disease,Troponin,45.3,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Brown,2026-05-10
+P0437,E0437,33,Male,I50.9,Heart failure,Hemoglobin,10.7,g/dL,12.0,16.0,Low,Routine,Cardiology,Dr Wilson,2026-05-10
+P0438,E0438,78,Male,I10,Hypertension,Platelets,42.7,10^9/L,150.0,450.0,Low,Routine,Cardiology,Dr Jones,2026-05-13
+P0439,E0439,23,Male,A41.9,Sepsis,Sodium,150.0,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Patel,2026-05-22
+P0440,E0440,59,Female,I50.9,Heart failure,ALT,45.2,U/L,7.0,56.0,Normal,Routine,Cardiology,Dr Lee,2026-05-27
+P0441,E0441,59,Male,N18.4,Chronic kidney disease,Potassium,6.4,mmol/L,3.5,5.1,High,Critical,Nephrology,Dr Lee,2026-05-12
+P0442,E0442,73,Male,I50.9,Heart failure,Lactate,5.0,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Smith,2026-05-07
+P0443,E0443,27,Male,I10,Hypertension,Lactate,4.0,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Patel,2026-05-14
+P0444,E0444,33,Female,D64.9,Anemia,ALT,324.4,U/L,7.0,56.0,High,Routine,Internal Medicine,Dr Jones,2026-05-10
+P0445,E0445,84,Male,R50.9,Fever,AST,332.5,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-05-21
+P0446,E0446,55,Female,A41.9,Sepsis,Platelets,627.6,10^9/L,150.0,450.0,High,Routine,Emergency,Dr Jones,2026-05-09
+P0447,E0447,56,Female,J44.9,COPD,Platelets,609.9,10^9/L,150.0,450.0,High,Routine,Pulmonology,Dr Adams,2026-05-31
+P0448,E0448,84,Male,R50.9,Fever,Sodium,143.3,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Brown,2026-05-16
+P0449,E0449,62,Female,N17.9,Acute kidney injury,Potassium,3.2,mmol/L,3.5,5.1,Low,Routine,ICU,Dr Smith,2026-05-22
+P0450,E0450,19,Female,R50.9,Fever,ALT,198.1,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-17
+P0451,E0451,84,Male,K76.9,Liver disease,ALT,53.5,U/L,7.0,56.0,Normal,Routine,Hepatology,Dr Adams,2026-05-07
+P0452,E0452,60,Female,N18.4,Chronic kidney disease,Lactate,6.6,mmol/L,0.5,2.2,High,Routine,Nephrology,Dr Patel,2026-05-06
+P0453,E0453,60,Female,J44.9,COPD,Sodium,121.7,mmol/L,135.0,145.0,Low,Routine,Pulmonology,Dr Jones,2026-05-20
+P0454,E0454,38,Male,I10,Hypertension,Sodium,151.4,mmol/L,135.0,145.0,High,Routine,Cardiology,Dr Adams,2026-05-07
+P0455,E0455,48,Female,I50.9,Heart failure,Potassium,3.5,mmol/L,3.5,5.1,Normal,Routine,Cardiology,Dr Smith,2026-05-11
+P0456,E0456,40,Male,R50.9,Fever,Troponin,104.1,ng/L,0.0,14.0,High,Routine,Emergency,Dr Brown,2026-05-09
+P0457,E0457,87,Male,J44.9,COPD,Hemoglobin,15.2,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Adams,2026-05-30
+P0458,E0458,22,Male,R50.9,Fever,ALT,195.2,U/L,7.0,56.0,High,Routine,Emergency,Dr Lee,2026-06-03
+P0459,E0459,32,Female,E11.9,Type 2 diabetes,Platelets,503.5,10^9/L,150.0,450.0,High,Routine,Endocrinology,Dr Patel,2026-05-21
+P0460,E0460,74,Female,E11.9,Type 2 diabetes,Troponin,31.1,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Adams,2026-05-12
+P0461,E0461,90,Male,I50.9,Heart failure,AST,137.8,U/L,10.0,40.0,High,Routine,Cardiology,Dr Brown,2026-05-29
+P0462,E0462,59,Male,J44.9,COPD,HbA1c,11.3,%,4.0,5.6,High,High Risk,Pulmonology,Dr Thomas,2026-05-18
+P0463,E0463,24,Female,N17.9,Acute kidney injury,Creatinine,3.0,mg/dL,0.6,1.2,High,Routine,ICU,Dr Wilson,2026-05-29
+P0464,E0464,70,Female,A41.9,Sepsis,ALT,273.0,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-15
+P0465,E0465,30,Female,N17.9,Acute kidney injury,Lactate,6.4,mmol/L,0.5,2.2,High,Routine,ICU,Dr Jones,2026-05-18
+P0466,E0466,74,Female,K76.9,Liver disease,Platelets,89.9,10^9/L,150.0,450.0,Low,Routine,Hepatology,Dr Jones,2026-05-06
+P0467,E0467,21,Female,J44.9,COPD,AST,55.3,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Jones,2026-05-20
+P0468,E0468,87,Male,A41.9,Sepsis,Sodium,137.3,mmol/L,135.0,145.0,Normal,Routine,Emergency,Dr Smith,2026-05-21
+P0469,E0469,32,Female,I10,Hypertension,ALT,230.4,U/L,7.0,56.0,High,Routine,Cardiology,Dr Jones,2026-05-26
+P0470,E0470,33,Female,I50.9,Heart failure,ALT,191.9,U/L,7.0,56.0,High,Routine,Cardiology,Dr Adams,2026-05-06
+P0471,E0471,44,Female,I10,Hypertension,Troponin,61.1,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Lee,2026-06-03
+P0472,E0472,51,Female,N17.9,Acute kidney injury,Glucose,335.1,mg/dL,70.0,140.0,High,Routine,ICU,Dr Adams,2026-05-25
+P0473,E0473,41,Female,K76.9,Liver disease,AST,167.7,U/L,10.0,40.0,High,Routine,Hepatology,Dr Thomas,2026-05-19
+P0474,E0474,37,Female,E11.9,Type 2 diabetes,AST,100.8,U/L,10.0,40.0,High,Routine,Endocrinology,Dr Wilson,2026-05-25
+P0475,E0475,73,Male,I10,Hypertension,Glucose,133.6,mg/dL,70.0,140.0,Normal,Routine,Cardiology,Dr Lee,2026-05-19
+P0476,E0476,61,Female,I10,Hypertension,Glucose,260.2,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Thomas,2026-05-30
+P0477,E0477,81,Female,K76.9,Liver disease,WBC,5.0,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Wilson,2026-05-15
+P0478,E0478,88,Female,R50.9,Fever,Hemoglobin,8.1,g/dL,12.0,16.0,Low,High Risk,Emergency,Dr Patel,2026-05-24
+P0479,E0479,84,Female,N17.9,Acute kidney injury,AST,71.3,U/L,10.0,40.0,High,Routine,ICU,Dr Patel,2026-05-17
+P0480,E0480,87,Female,D64.9,Anemia,Glucose,157.4,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Brown,2026-05-23
+P0481,E0481,72,Female,N18.4,Chronic kidney disease,WBC,3.1,10^9/L,4.0,11.0,Low,Routine,Nephrology,Dr Adams,2026-05-10
+P0482,E0482,60,Male,I10,Hypertension,HbA1c,6.6,%,4.0,5.6,High,Routine,Cardiology,Dr Smith,2026-05-21
+P0483,E0483,67,Male,A41.9,Sepsis,Lactate,5.6,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Lee,2026-05-13
+P0484,E0484,41,Male,K76.9,Liver disease,ALT,236.2,U/L,7.0,56.0,High,Routine,Hepatology,Dr Brown,2026-05-30
+P0485,E0485,85,Female,A41.9,Sepsis,Lactate,4.2,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Patel,2026-05-27
+P0486,E0486,36,Female,A41.9,Sepsis,Sodium,127.0,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Adams,2026-05-10
+P0487,E0487,55,Male,I10,Hypertension,Platelets,209.1,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Smith,2026-05-13
+P0488,E0488,61,Female,N17.9,Acute kidney injury,Sodium,122.4,mmol/L,135.0,145.0,Low,Routine,ICU,Dr Adams,2026-05-20
+P0489,E0489,25,Male,J44.9,COPD,HbA1c,8.2,%,4.0,5.6,High,High Risk,Pulmonology,Dr Patel,2026-05-23
+P0490,E0490,86,Female,I10,Hypertension,Troponin,14.2,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Adams,2026-05-21
+P0491,E0491,28,Male,J44.9,COPD,WBC,8.9,10^9/L,4.0,11.0,Normal,Routine,Pulmonology,Dr Brown,2026-05-30
+P0492,E0492,83,Male,N17.9,Acute kidney injury,Hemoglobin,12.2,g/dL,12.0,16.0,Normal,Routine,ICU,Dr Jones,2026-05-07
+P0493,E0493,23,Male,E11.9,Type 2 diabetes,AST,70.6,U/L,10.0,40.0,High,Routine,Endocrinology,Dr Jones,2026-05-18
+P0494,E0494,37,Male,E11.9,Type 2 diabetes,WBC,3.9,10^9/L,4.0,11.0,Low,Routine,Endocrinology,Dr Wilson,2026-05-04
+P0495,E0495,87,Female,K76.9,Liver disease,AST,286.3,U/L,10.0,40.0,High,Routine,Hepatology,Dr Adams,2026-05-05
+P0496,E0496,55,Male,E11.9,Type 2 diabetes,Troponin,31.0,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Lee,2026-05-13
+P0497,E0497,21,Male,E11.9,Type 2 diabetes,AST,248.9,U/L,10.0,40.0,High,Routine,Endocrinology,Dr Brown,2026-05-19
+P0498,E0498,28,Female,I50.9,Heart failure,HbA1c,7.5,%,4.0,5.6,High,Routine,Cardiology,Dr Jones,2026-06-02
+P0499,E0499,64,Female,I50.9,Heart failure,WBC,5.9,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Lee,2026-05-13
+P0500,E0500,54,Male,I10,Hypertension,WBC,4.3,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Patel,2026-05-21
+P0501,E0501,42,Male,I10,Hypertension,WBC,2.8,10^9/L,4.0,11.0,Low,Routine,Cardiology,Dr Patel,2026-06-01
+P0502,E0502,40,Male,K76.9,Liver disease,ALT,278.8,U/L,7.0,56.0,High,Routine,Hepatology,Dr Patel,2026-05-05
+P0503,E0503,73,Female,J44.9,COPD,Hemoglobin,8.5,g/dL,12.0,16.0,Low,High Risk,Pulmonology,Dr Brown,2026-05-05
+P0504,E0504,54,Female,E11.9,Type 2 diabetes,Hemoglobin,17.0,g/dL,12.0,16.0,High,Routine,Endocrinology,Dr Adams,2026-05-23
+P0505,E0505,59,Male,N18.4,Chronic kidney disease,Troponin,81.4,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Smith,2026-06-02
+P0506,E0506,47,Female,J44.9,COPD,HbA1c,11.4,%,4.0,5.6,High,High Risk,Pulmonology,Dr Adams,2026-05-28
+P0507,E0507,34,Male,I50.9,Heart failure,AST,318.1,U/L,10.0,40.0,High,Routine,Cardiology,Dr Thomas,2026-05-22
+P0508,E0508,46,Female,A41.9,Sepsis,WBC,15.0,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Wilson,2026-05-04
+P0509,E0509,63,Female,R50.9,Fever,Lactate,1.4,mmol/L,0.5,2.2,Normal,Routine,Emergency,Dr Brown,2026-05-31
+P0510,E0510,26,Female,A41.9,Sepsis,Troponin,102.5,ng/L,0.0,14.0,High,Routine,Emergency,Dr Thomas,2026-05-20
+P0511,E0511,73,Male,E11.9,Type 2 diabetes,WBC,14.0,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Patel,2026-05-20
+P0512,E0512,62,Male,N17.9,Acute kidney injury,Platelets,630.4,10^9/L,150.0,450.0,High,Routine,ICU,Dr Wilson,2026-05-28
+P0513,E0513,55,Male,K76.9,Liver disease,AST,268.0,U/L,10.0,40.0,High,Routine,Hepatology,Dr Thomas,2026-05-30
+P0514,E0514,40,Male,J44.9,COPD,Potassium,5.4,mmol/L,3.5,5.1,High,Routine,Pulmonology,Dr Thomas,2026-05-21
+P0515,E0515,69,Female,D64.9,Anemia,Platelets,138.7,10^9/L,150.0,450.0,Low,Routine,Internal Medicine,Dr Thomas,2026-05-15
+P0516,E0516,40,Male,J44.9,COPD,Glucose,155.5,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Brown,2026-05-05
+P0517,E0517,82,Female,D64.9,Anemia,Sodium,133.3,mmol/L,135.0,145.0,Low,Routine,Internal Medicine,Dr Jones,2026-05-19
+P0518,E0518,65,Female,R50.9,Fever,Creatinine,1.9,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Brown,2026-05-28
+P0519,E0519,19,Female,R50.9,Fever,Creatinine,3.5,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Wilson,2026-05-16
+P0520,E0520,43,Female,I50.9,Heart failure,Platelets,436.4,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Wilson,2026-05-17
+P0521,E0521,90,Male,K76.9,Liver disease,AST,130.2,U/L,10.0,40.0,High,Routine,Hepatology,Dr Smith,2026-06-01
+P0522,E0522,82,Male,I10,Hypertension,Glucose,165.9,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Lee,2026-05-18
+P0523,E0523,50,Male,K76.9,Liver disease,Hemoglobin,7.2,g/dL,12.0,16.0,Low,High Risk,Hepatology,Dr Lee,2026-05-30
+P0524,E0524,40,Female,N17.9,Acute kidney injury,ALT,19.2,U/L,7.0,56.0,Normal,Routine,ICU,Dr Thomas,2026-05-04
+P0525,E0525,44,Female,E11.9,Type 2 diabetes,Lactate,4.8,mmol/L,0.5,2.2,High,Routine,Endocrinology,Dr Patel,2026-05-14
+P0526,E0526,79,Male,I50.9,Heart failure,Glucose,419.9,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Jones,2026-05-15
+P0527,E0527,85,Female,J44.9,COPD,Glucose,224.7,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Wilson,2026-05-10
+P0528,E0528,69,Male,R50.9,Fever,Platelets,430.2,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Lee,2026-05-11
+P0529,E0529,79,Male,N18.4,Chronic kidney disease,Platelets,387.1,10^9/L,150.0,450.0,Normal,Routine,Nephrology,Dr Smith,2026-05-09
+P0530,E0530,56,Female,I50.9,Heart failure,Lactate,7.6,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Lee,2026-05-14
+P0531,E0531,84,Female,J44.9,COPD,AST,251.3,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Wilson,2026-05-23
+P0532,E0532,64,Male,N17.9,Acute kidney injury,Troponin,114.1,ng/L,0.0,14.0,High,Routine,ICU,Dr Lee,2026-05-16
+P0533,E0533,42,Male,I10,Hypertension,AST,308.5,U/L,10.0,40.0,High,Routine,Cardiology,Dr Patel,2026-05-22
+P0534,E0534,62,Male,A41.9,Sepsis,Sodium,118.6,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Jones,2026-05-22
+P0535,E0535,69,Female,A41.9,Sepsis,Creatinine,6.2,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Adams,2026-05-15
+P0536,E0536,73,Female,R50.9,Fever,Glucose,280.7,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Thomas,2026-05-05
+P0537,E0537,67,Male,R50.9,Fever,Lactate,7.5,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-06-01
+P0538,E0538,74,Female,A41.9,Sepsis,HbA1c,5.7,%,4.0,5.6,High,Routine,Emergency,Dr Adams,2026-05-18
+P0539,E0539,47,Male,R50.9,Fever,Creatinine,5.4,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Thomas,2026-05-21
+P0540,E0540,25,Male,J44.9,COPD,Lactate,5.8,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Brown,2026-05-20
+P0541,E0541,54,Male,R50.9,Fever,Hemoglobin,10.5,g/dL,12.0,16.0,Low,Routine,Emergency,Dr Patel,2026-05-28
+P0542,E0542,61,Male,N18.4,Chronic kidney disease,Hemoglobin,14.4,g/dL,12.0,16.0,Normal,Routine,Nephrology,Dr Adams,2026-05-12
+P0543,E0543,29,Male,J44.9,COPD,Creatinine,4.1,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Smith,2026-05-21
+P0544,E0544,84,Female,N18.4,Chronic kidney disease,Platelets,506.9,10^9/L,150.0,450.0,High,Routine,Nephrology,Dr Thomas,2026-05-12
+P0545,E0545,28,Female,N18.4,Chronic kidney disease,AST,70.2,U/L,10.0,40.0,High,Routine,Nephrology,Dr Lee,2026-05-08
+P0546,E0546,35,Male,D64.9,Anemia,Glucose,350.4,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Adams,2026-05-10
+P0547,E0547,89,Female,J44.9,COPD,HbA1c,6.1,%,4.0,5.6,High,Routine,Pulmonology,Dr Brown,2026-05-21
+P0548,E0548,43,Female,N17.9,Acute kidney injury,Sodium,130.0,mmol/L,135.0,145.0,Low,Routine,ICU,Dr Jones,2026-05-12
+P0549,E0549,73,Female,K76.9,Liver disease,Platelets,304.4,10^9/L,150.0,450.0,Normal,Routine,Hepatology,Dr Lee,2026-05-16
+P0550,E0550,34,Female,I50.9,Heart failure,Hemoglobin,13.6,g/dL,12.0,16.0,Normal,Routine,Cardiology,Dr Patel,2026-05-19
+P0551,E0551,43,Female,K76.9,Liver disease,Sodium,159.2,mmol/L,135.0,145.0,High,Routine,Hepatology,Dr Jones,2026-06-01
+P0552,E0552,64,Female,I10,Hypertension,Potassium,3.2,mmol/L,3.5,5.1,Low,Routine,Cardiology,Dr Thomas,2026-05-15
+P0553,E0553,71,Male,J44.9,COPD,Platelets,46.1,10^9/L,150.0,450.0,Low,Routine,Pulmonology,Dr Thomas,2026-05-15
+P0554,E0554,50,Female,E11.9,Type 2 diabetes,WBC,7.1,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Smith,2026-06-03
+P0555,E0555,66,Male,A41.9,Sepsis,Hemoglobin,11.7,g/dL,12.0,16.0,Low,Routine,Emergency,Dr Adams,2026-05-09
+P0556,E0556,24,Female,E11.9,Type 2 diabetes,WBC,18.1,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Smith,2026-05-29
+P0557,E0557,24,Female,I50.9,Heart failure,WBC,8.8,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Smith,2026-05-07
+P0558,E0558,34,Female,N17.9,Acute kidney injury,Glucose,397.4,mg/dL,70.0,140.0,High,Routine,ICU,Dr Brown,2026-05-15
+P0559,E0559,77,Female,A41.9,Sepsis,Platelets,234.7,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Wilson,2026-05-22
+P0560,E0560,19,Female,R50.9,Fever,HbA1c,7.2,%,4.0,5.6,High,Routine,Emergency,Dr Adams,2026-05-27
+P0561,E0561,84,Female,N18.4,Chronic kidney disease,ALT,8.8,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Patel,2026-06-02
+P0562,E0562,89,Male,K76.9,Liver disease,WBC,10.4,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Brown,2026-05-19
+P0563,E0563,43,Female,A41.9,Sepsis,ALT,129.7,U/L,7.0,56.0,High,Routine,Emergency,Dr Wilson,2026-05-27
+P0564,E0564,32,Male,R50.9,Fever,Potassium,6.7,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Brown,2026-05-18
+P0565,E0565,55,Male,K76.9,Liver disease,WBC,10.5,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Lee,2026-05-07
+P0566,E0566,83,Female,J44.9,COPD,Sodium,119.7,mmol/L,135.0,145.0,Low,Routine,Pulmonology,Dr Thomas,2026-05-16
+P0567,E0567,56,Female,J44.9,COPD,Hemoglobin,16.7,g/dL,12.0,16.0,High,Routine,Pulmonology,Dr Brown,2026-05-14
+P0568,E0568,50,Male,J44.9,COPD,HbA1c,6.8,%,4.0,5.6,High,Routine,Pulmonology,Dr Adams,2026-05-24
+P0569,E0569,61,Male,I10,Hypertension,AST,213.0,U/L,10.0,40.0,High,Routine,Cardiology,Dr Brown,2026-05-21
+P0570,E0570,75,Male,D64.9,Anemia,Hemoglobin,8.5,g/dL,12.0,16.0,Low,High Risk,Internal Medicine,Dr Smith,2026-05-22
+P0571,E0571,87,Male,I10,Hypertension,Lactate,7.5,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Patel,2026-05-05
+P0572,E0572,41,Male,N17.9,Acute kidney injury,Platelets,264.1,10^9/L,150.0,450.0,Normal,Routine,ICU,Dr Smith,2026-05-07
+P0573,E0573,60,Male,D64.9,Anemia,Glucose,305.4,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Adams,2026-05-18
+P0574,E0574,45,Female,J44.9,COPD,Potassium,5.2,mmol/L,3.5,5.1,High,Routine,Pulmonology,Dr Brown,2026-05-31
+P0575,E0575,20,Female,N17.9,Acute kidney injury,Glucose,114.2,mg/dL,70.0,140.0,Normal,Routine,ICU,Dr Lee,2026-05-22
+P0576,E0576,27,Male,K76.9,Liver disease,Hemoglobin,14.3,g/dL,12.0,16.0,Normal,Routine,Hepatology,Dr Lee,2026-05-15
+P0577,E0577,68,Male,N17.9,Acute kidney injury,Potassium,2.9,mmol/L,3.5,5.1,Low,Critical,ICU,Dr Jones,2026-05-18
+P0578,E0578,42,Male,I10,Hypertension,Sodium,130.2,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Lee,2026-05-22
+P0579,E0579,48,Male,J44.9,COPD,WBC,27.3,10^9/L,4.0,11.0,High,Routine,Pulmonology,Dr Thomas,2026-05-21
+P0580,E0580,89,Male,N17.9,Acute kidney injury,Potassium,2.9,mmol/L,3.5,5.1,Low,Critical,ICU,Dr Adams,2026-05-04
+P0581,E0581,25,Female,J44.9,COPD,Troponin,119.6,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Patel,2026-05-06
+P0582,E0582,58,Female,J44.9,COPD,Lactate,8.6,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Patel,2026-05-31
+P0583,E0583,34,Female,N17.9,Acute kidney injury,Troponin,33.8,ng/L,0.0,14.0,High,Routine,ICU,Dr Wilson,2026-05-24
+P0584,E0584,42,Male,D64.9,Anemia,WBC,9.7,10^9/L,4.0,11.0,Normal,Routine,Internal Medicine,Dr Brown,2026-05-17
+P0585,E0585,26,Female,R50.9,Fever,Platelets,594.3,10^9/L,150.0,450.0,High,Routine,Emergency,Dr Wilson,2026-05-12
+P0586,E0586,46,Male,A41.9,Sepsis,WBC,8.2,10^9/L,4.0,11.0,Normal,Routine,Emergency,Dr Smith,2026-05-14
+P0587,E0587,29,Male,K76.9,Liver disease,Lactate,7.2,mmol/L,0.5,2.2,High,Routine,Hepatology,Dr Lee,2026-05-09
+P0588,E0588,67,Male,N18.4,Chronic kidney disease,Platelets,265.8,10^9/L,150.0,450.0,Normal,Routine,Nephrology,Dr Lee,2026-06-02
+P0589,E0589,50,Male,I10,Hypertension,Creatinine,3.2,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Jones,2026-05-31
+P0590,E0590,64,Female,A41.9,Sepsis,Sodium,158.8,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Wilson,2026-05-31
+P0591,E0591,19,Female,J44.9,COPD,Lactate,4.6,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Adams,2026-05-08
+P0592,E0592,58,Female,E11.9,Type 2 diabetes,Hemoglobin,7.9,g/dL,12.0,16.0,Low,High Risk,Endocrinology,Dr Smith,2026-05-13
+P0593,E0593,81,Male,I10,Hypertension,Lactate,6.3,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Patel,2026-05-31
+P0594,E0594,51,Female,J44.9,COPD,Lactate,1.3,mmol/L,0.5,2.2,Normal,Routine,Pulmonology,Dr Adams,2026-05-28
+P0595,E0595,57,Female,E11.9,Type 2 diabetes,Platelets,523.5,10^9/L,150.0,450.0,High,Routine,Endocrinology,Dr Brown,2026-05-25
+P0596,E0596,78,Female,D64.9,Anemia,Troponin,68.6,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Adams,2026-05-28
+P0597,E0597,37,Male,N17.9,Acute kidney injury,Platelets,266.0,10^9/L,150.0,450.0,Normal,Routine,ICU,Dr Thomas,2026-06-02
+P0598,E0598,68,Female,J44.9,COPD,AST,229.6,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Thomas,2026-05-07
+P0599,E0599,28,Male,J44.9,COPD,ALT,117.0,U/L,7.0,56.0,High,Routine,Pulmonology,Dr Wilson,2026-05-07
+P0600,E0600,35,Female,R50.9,Fever,Lactate,6.7,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Patel,2026-05-25
+P0601,E0601,60,Male,N18.4,Chronic kidney disease,Creatinine,2.4,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Thomas,2026-05-09
+P0602,E0602,69,Male,N18.4,Chronic kidney disease,WBC,4.8,10^9/L,4.0,11.0,Normal,Routine,Nephrology,Dr Lee,2026-05-04
+P0603,E0603,19,Female,K76.9,Liver disease,Sodium,156.8,mmol/L,135.0,145.0,High,Routine,Hepatology,Dr Jones,2026-05-29
+P0604,E0604,67,Female,K76.9,Liver disease,WBC,6.0,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Thomas,2026-05-21
+P0605,E0605,33,Female,J44.9,COPD,Hemoglobin,15.5,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Adams,2026-05-22
+P0606,E0606,28,Male,E11.9,Type 2 diabetes,Sodium,136.3,mmol/L,135.0,145.0,Normal,Routine,Endocrinology,Dr Adams,2026-05-30
+P0607,E0607,56,Female,D64.9,Anemia,Sodium,156.1,mmol/L,135.0,145.0,High,Routine,Internal Medicine,Dr Wilson,2026-05-26
+P0608,E0608,89,Female,E11.9,Type 2 diabetes,Creatinine,3.1,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Adams,2026-05-14
+P0609,E0609,36,Male,N18.4,Chronic kidney disease,Hemoglobin,9.3,g/dL,12.0,16.0,Low,Routine,Nephrology,Dr Adams,2026-05-10
+P0610,E0610,73,Female,I10,Hypertension,HbA1c,7.3,%,4.0,5.6,High,Routine,Cardiology,Dr Lee,2026-05-25
+P0611,E0611,76,Female,E11.9,Type 2 diabetes,Lactate,0.5,mmol/L,0.5,2.2,Normal,Routine,Endocrinology,Dr Jones,2026-05-13
+P0612,E0612,47,Male,N18.4,Chronic kidney disease,WBC,3.6,10^9/L,4.0,11.0,Low,Routine,Nephrology,Dr Adams,2026-05-29
+P0613,E0613,38,Female,E11.9,Type 2 diabetes,Hemoglobin,10.2,g/dL,12.0,16.0,Low,Routine,Endocrinology,Dr Wilson,2026-05-16
+P0614,E0614,27,Male,I50.9,Heart failure,Creatinine,1.4,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Wilson,2026-05-08
+P0615,E0615,20,Male,I10,Hypertension,Troponin,29.9,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Adams,2026-06-03
+P0616,E0616,18,Female,A41.9,Sepsis,Potassium,3.3,mmol/L,3.5,5.1,Low,Routine,Emergency,Dr Brown,2026-05-04
+P0617,E0617,78,Male,J44.9,COPD,Platelets,430.8,10^9/L,150.0,450.0,Normal,Routine,Pulmonology,Dr Wilson,2026-05-05
+P0618,E0618,49,Male,I50.9,Heart failure,WBC,18.1,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Adams,2026-05-18
+P0619,E0619,54,Female,D64.9,Anemia,Glucose,93.3,mg/dL,70.0,140.0,Normal,Routine,Internal Medicine,Dr Wilson,2026-06-03
+P0620,E0620,61,Female,N17.9,Acute kidney injury,WBC,3.7,10^9/L,4.0,11.0,Low,Routine,ICU,Dr Adams,2026-05-26
+P0621,E0621,79,Male,D64.9,Anemia,Potassium,3.6,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Jones,2026-05-25
+P0622,E0622,65,Male,D64.9,Anemia,Creatinine,1.4,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Brown,2026-05-30
+P0623,E0623,82,Female,I50.9,Heart failure,Lactate,6.0,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Jones,2026-05-06
+P0624,E0624,86,Male,A41.9,Sepsis,Platelets,447.4,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Patel,2026-05-27
+P0625,E0625,45,Male,K76.9,Liver disease,WBC,9.9,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Wilson,2026-06-03
+P0626,E0626,61,Female,I50.9,Heart failure,Potassium,3.3,mmol/L,3.5,5.1,Low,Routine,Cardiology,Dr Adams,2026-06-01
+P0627,E0627,41,Male,I50.9,Heart failure,Platelets,231.2,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Wilson,2026-05-16
+P0628,E0628,84,Female,R50.9,Fever,Lactate,4.4,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-06-01
+P0629,E0629,21,Male,N18.4,Chronic kidney disease,Creatinine,2.1,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Thomas,2026-05-05
+P0630,E0630,39,Female,R50.9,Fever,WBC,26.6,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Thomas,2026-05-30
+P0631,E0631,29,Male,N18.4,Chronic kidney disease,ALT,25.0,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Thomas,2026-06-03
+P0632,E0632,74,Female,J44.9,COPD,Hemoglobin,7.4,g/dL,12.0,16.0,Low,High Risk,Pulmonology,Dr Adams,2026-05-04
+P0633,E0633,35,Female,N17.9,Acute kidney injury,Sodium,152.5,mmol/L,135.0,145.0,High,Routine,ICU,Dr Lee,2026-05-07
+P0634,E0634,87,Male,A41.9,Sepsis,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Wilson,2026-05-22
+P0635,E0635,64,Female,I10,Hypertension,AST,331.1,U/L,10.0,40.0,High,Routine,Cardiology,Dr Smith,2026-06-02
+P0636,E0636,88,Female,J44.9,COPD,Creatinine,6.4,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Adams,2026-05-11
+P0637,E0637,76,Male,I10,Hypertension,HbA1c,5.2,%,4.0,5.6,Normal,Routine,Cardiology,Dr Adams,2026-05-23
+P0638,E0638,68,Female,I10,Hypertension,Potassium,3.0,mmol/L,3.5,5.1,Low,Critical,Cardiology,Dr Adams,2026-05-14
+P0639,E0639,53,Male,N17.9,Acute kidney injury,Creatinine,4.1,mg/dL,0.6,1.2,High,Routine,ICU,Dr Patel,2026-05-06
+P0640,E0640,40,Male,J44.9,COPD,Platelets,601.2,10^9/L,150.0,450.0,High,Routine,Pulmonology,Dr Patel,2026-05-18
+P0641,E0641,51,Male,N18.4,Chronic kidney disease,Lactate,4.8,mmol/L,0.5,2.2,High,Routine,Nephrology,Dr Adams,2026-05-04
+P0642,E0642,27,Female,I10,Hypertension,Hemoglobin,7.6,g/dL,12.0,16.0,Low,High Risk,Cardiology,Dr Smith,2026-05-22
+P0643,E0643,66,Male,N18.4,Chronic kidney disease,Potassium,3.4,mmol/L,3.5,5.1,Low,Routine,Nephrology,Dr Thomas,2026-05-10
+P0644,E0644,72,Male,N17.9,Acute kidney injury,Hemoglobin,15.0,g/dL,12.0,16.0,Normal,Routine,ICU,Dr Brown,2026-05-21
+P0645,E0645,81,Female,J44.9,COPD,Potassium,5.3,mmol/L,3.5,5.1,High,Routine,Pulmonology,Dr Jones,2026-05-08
+P0646,E0646,22,Male,R50.9,Fever,Sodium,119.6,mmol/L,135.0,145.0,Low,Routine,Emergency,Dr Jones,2026-05-16
+P0647,E0647,41,Male,N17.9,Acute kidney injury,AST,117.9,U/L,10.0,40.0,High,Routine,ICU,Dr Jones,2026-05-24
+P0648,E0648,50,Male,K76.9,Liver disease,ALT,136.1,U/L,7.0,56.0,High,Routine,Hepatology,Dr Patel,2026-05-31
+P0649,E0649,37,Male,I50.9,Heart failure,Glucose,346.2,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Adams,2026-05-12
+P0650,E0650,81,Male,N17.9,Acute kidney injury,WBC,13.2,10^9/L,4.0,11.0,High,Routine,ICU,Dr Wilson,2026-06-03
+P0651,E0651,55,Female,A41.9,Sepsis,HbA1c,9.7,%,4.0,5.6,High,High Risk,Emergency,Dr Smith,2026-05-26
+P0652,E0652,51,Male,N17.9,Acute kidney injury,Potassium,5.4,mmol/L,3.5,5.1,High,Routine,ICU,Dr Jones,2026-06-03
+P0653,E0653,21,Female,J44.9,COPD,Lactate,2.7,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Smith,2026-05-09
+P0654,E0654,82,Female,N17.9,Acute kidney injury,Potassium,5.3,mmol/L,3.5,5.1,High,Routine,ICU,Dr Adams,2026-05-22
+P0655,E0655,25,Female,I10,Hypertension,Potassium,5.6,mmol/L,3.5,5.1,High,Routine,Cardiology,Dr Smith,2026-05-23
+P0656,E0656,58,Female,E11.9,Type 2 diabetes,AST,12.5,U/L,10.0,40.0,Normal,Routine,Endocrinology,Dr Wilson,2026-05-09
+P0657,E0657,89,Female,J44.9,COPD,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Lee,2026-05-06
+P0658,E0658,59,Male,I50.9,Heart failure,WBC,27.1,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Thomas,2026-05-06
+P0659,E0659,41,Male,E11.9,Type 2 diabetes,Glucose,381.5,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Wilson,2026-05-10
+P0660,E0660,40,Female,I50.9,Heart failure,Platelets,159.4,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Smith,2026-05-23
+P0661,E0661,30,Female,D64.9,Anemia,Hemoglobin,8.0,g/dL,12.0,16.0,Low,High Risk,Internal Medicine,Dr Brown,2026-06-03
+P0662,E0662,44,Male,D64.9,Anemia,Troponin,92.9,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Jones,2026-05-06
+P0663,E0663,68,Male,N18.4,Chronic kidney disease,Sodium,124.6,mmol/L,135.0,145.0,Low,Routine,Nephrology,Dr Thomas,2026-05-14
+P0664,E0664,89,Female,D64.9,Anemia,Troponin,38.6,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Smith,2026-05-04
+P0665,E0665,72,Female,J44.9,COPD,AST,95.7,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Adams,2026-06-01
+P0666,E0666,83,Male,R50.9,Fever,AST,225.9,U/L,10.0,40.0,High,Routine,Emergency,Dr Patel,2026-05-31
+P0667,E0667,77,Male,K76.9,Liver disease,ALT,285.2,U/L,7.0,56.0,High,Routine,Hepatology,Dr Adams,2026-05-19
+P0668,E0668,21,Female,D64.9,Anemia,WBC,6.7,10^9/L,4.0,11.0,Normal,Routine,Internal Medicine,Dr Patel,2026-05-12
+P0669,E0669,68,Female,E11.9,Type 2 diabetes,Sodium,124.3,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Lee,2026-05-25
+P0670,E0670,26,Female,N17.9,Acute kidney injury,Hemoglobin,13.1,g/dL,12.0,16.0,Normal,Routine,ICU,Dr Lee,2026-06-02
+P0671,E0671,88,Female,K76.9,Liver disease,Lactate,5.2,mmol/L,0.5,2.2,High,Routine,Hepatology,Dr Patel,2026-05-18
+P0672,E0672,69,Female,R50.9,Fever,Lactate,8.5,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Jones,2026-05-27
+P0673,E0673,35,Female,N17.9,Acute kidney injury,Lactate,5.5,mmol/L,0.5,2.2,High,Routine,ICU,Dr Jones,2026-05-11
+P0674,E0674,83,Male,K76.9,Liver disease,Creatinine,2.8,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Lee,2026-05-24
+P0675,E0675,53,Female,I50.9,Heart failure,Troponin,98.1,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Lee,2026-06-03
+P0676,E0676,52,Male,I10,Hypertension,Hemoglobin,14.6,g/dL,12.0,16.0,Normal,Routine,Cardiology,Dr Lee,2026-05-31
+P0677,E0677,33,Male,N18.4,Chronic kidney disease,Lactate,7.4,mmol/L,0.5,2.2,High,Routine,Nephrology,Dr Lee,2026-05-29
+P0678,E0678,84,Male,E11.9,Type 2 diabetes,Lactate,6.8,mmol/L,0.5,2.2,High,Routine,Endocrinology,Dr Jones,2026-05-08
+P0679,E0679,77,Female,N17.9,Acute kidney injury,Potassium,6.4,mmol/L,3.5,5.1,High,Critical,ICU,Dr Smith,2026-05-29
+P0680,E0680,43,Male,E11.9,Type 2 diabetes,Glucose,155.7,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Adams,2026-05-13
+P0681,E0681,67,Male,E11.9,Type 2 diabetes,WBC,24.2,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Wilson,2026-05-06
+P0682,E0682,41,Male,J44.9,COPD,Glucose,389.2,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Thomas,2026-06-02
+P0683,E0683,44,Female,I10,Hypertension,Potassium,3.1,mmol/L,3.5,5.1,Low,Routine,Cardiology,Dr Adams,2026-05-09
+P0684,E0684,52,Male,I10,Hypertension,ALT,126.0,U/L,7.0,56.0,High,Routine,Cardiology,Dr Patel,2026-05-06
+P0685,E0685,21,Male,I50.9,Heart failure,Glucose,178.0,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Jones,2026-05-20
+P0686,E0686,42,Male,K76.9,Liver disease,Sodium,155.7,mmol/L,135.0,145.0,High,Routine,Hepatology,Dr Jones,2026-05-04
+P0687,E0687,86,Female,N17.9,Acute kidney injury,HbA1c,6.3,%,4.0,5.6,High,Routine,ICU,Dr Smith,2026-05-31
+P0688,E0688,23,Female,D64.9,Anemia,Sodium,126.6,mmol/L,135.0,145.0,Low,Routine,Internal Medicine,Dr Lee,2026-05-26
+P0689,E0689,78,Female,I10,Hypertension,HbA1c,4.5,%,4.0,5.6,Normal,Routine,Cardiology,Dr Wilson,2026-05-15
+P0690,E0690,33,Male,N18.4,Chronic kidney disease,Glucose,237.1,mg/dL,70.0,140.0,High,Routine,Nephrology,Dr Adams,2026-05-12
+P0691,E0691,18,Male,D64.9,Anemia,HbA1c,7.3,%,4.0,5.6,High,Routine,Internal Medicine,Dr Lee,2026-05-15
+P0692,E0692,24,Male,J44.9,COPD,Hemoglobin,14.2,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Jones,2026-05-24
+P0693,E0693,49,Female,N18.4,Chronic kidney disease,Glucose,183.0,mg/dL,70.0,140.0,High,Routine,Nephrology,Dr Jones,2026-05-06
+P0694,E0694,87,Male,D64.9,Anemia,Creatinine,4.5,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Smith,2026-05-20
+P0695,E0695,27,Male,D64.9,Anemia,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Brown,2026-05-17
+P0696,E0696,90,Male,N17.9,Acute kidney injury,Platelets,273.8,10^9/L,150.0,450.0,Normal,Routine,ICU,Dr Adams,2026-05-14
+P0697,E0697,28,Male,K76.9,Liver disease,Glucose,363.2,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Patel,2026-05-27
+P0698,E0698,56,Male,E11.9,Type 2 diabetes,Sodium,132.8,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Smith,2026-05-22
+P0699,E0699,52,Male,A41.9,Sepsis,Platelets,113.5,10^9/L,150.0,450.0,Low,Routine,Emergency,Dr Brown,2026-05-16
+P0700,E0700,36,Female,N17.9,Acute kidney injury,WBC,21.3,10^9/L,4.0,11.0,High,Routine,ICU,Dr Smith,2026-05-15
+P0701,E0701,75,Female,I50.9,Heart failure,AST,44.2,U/L,10.0,40.0,High,Routine,Cardiology,Dr Wilson,2026-05-05
+P0702,E0702,60,Male,I10,Hypertension,WBC,14.1,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Wilson,2026-05-23
+P0703,E0703,61,Female,N17.9,Acute kidney injury,AST,22.0,U/L,10.0,40.0,Normal,Routine,ICU,Dr Patel,2026-05-10
+P0704,E0704,33,Female,R50.9,Fever,Troponin,113.5,ng/L,0.0,14.0,High,Routine,Emergency,Dr Lee,2026-05-22
+P0705,E0705,84,Female,D64.9,Anemia,Glucose,388.3,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Smith,2026-05-10
+P0706,E0706,39,Male,J44.9,COPD,Glucose,144.4,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Wilson,2026-05-14
+P0707,E0707,78,Female,N17.9,Acute kidney injury,Lactate,2.7,mmol/L,0.5,2.2,High,Routine,ICU,Dr Adams,2026-05-23
+P0708,E0708,56,Male,N18.4,Chronic kidney disease,HbA1c,7.6,%,4.0,5.6,High,Routine,Nephrology,Dr Adams,2026-05-21
+P0709,E0709,49,Female,N17.9,Acute kidney injury,Creatinine,1.9,mg/dL,0.6,1.2,High,Routine,ICU,Dr Wilson,2026-05-16
+P0710,E0710,24,Female,K76.9,Liver disease,AST,26.5,U/L,10.0,40.0,Normal,Routine,Hepatology,Dr Patel,2026-05-07
+P0711,E0711,82,Male,N18.4,Chronic kidney disease,AST,83.4,U/L,10.0,40.0,High,Routine,Nephrology,Dr Adams,2026-05-07
+P0712,E0712,38,Female,A41.9,Sepsis,HbA1c,5.3,%,4.0,5.6,Normal,Routine,Emergency,Dr Patel,2026-05-23
+P0713,E0713,38,Male,N17.9,Acute kidney injury,Glucose,148.6,mg/dL,70.0,140.0,High,Routine,ICU,Dr Jones,2026-05-11
+P0714,E0714,85,Male,I50.9,Heart failure,Potassium,5.9,mmol/L,3.5,5.1,High,Routine,Cardiology,Dr Adams,2026-05-30
+P0715,E0715,20,Female,A41.9,Sepsis,Creatinine,0.5,mg/dL,0.6,1.2,Low,Routine,Emergency,Dr Patel,2026-05-15
+P0716,E0716,25,Male,N17.9,Acute kidney injury,HbA1c,5.5,%,4.0,5.6,Normal,Routine,ICU,Dr Brown,2026-05-27
+P0717,E0717,40,Female,K76.9,Liver disease,Sodium,128.2,mmol/L,135.0,145.0,Low,Routine,Hepatology,Dr Adams,2026-05-15
+P0718,E0718,54,Female,N18.4,Chronic kidney disease,Sodium,151.6,mmol/L,135.0,145.0,High,Routine,Nephrology,Dr Wilson,2026-05-29
+P0719,E0719,40,Female,A41.9,Sepsis,Platelets,109.3,10^9/L,150.0,450.0,Low,Routine,Emergency,Dr Thomas,2026-05-09
+P0720,E0720,52,Female,N18.4,Chronic kidney disease,Troponin,21.7,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Brown,2026-06-02
+P0721,E0721,46,Male,N18.4,Chronic kidney disease,Potassium,6.4,mmol/L,3.5,5.1,High,Critical,Nephrology,Dr Patel,2026-05-04
+P0722,E0722,47,Female,K76.9,Liver disease,Troponin,65.7,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Wilson,2026-05-21
+P0723,E0723,56,Female,R50.9,Fever,HbA1c,6.3,%,4.0,5.6,High,Routine,Emergency,Dr Patel,2026-05-26
+P0724,E0724,28,Female,R50.9,Fever,Potassium,5.3,mmol/L,3.5,5.1,High,Routine,Emergency,Dr Lee,2026-05-06
+P0725,E0725,35,Female,J44.9,COPD,Glucose,206.8,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Brown,2026-05-16
+P0726,E0726,75,Female,R50.9,Fever,Potassium,4.8,mmol/L,3.5,5.1,Normal,Routine,Emergency,Dr Lee,2026-05-11
+P0727,E0727,52,Female,N18.4,Chronic kidney disease,HbA1c,11.2,%,4.0,5.6,High,High Risk,Nephrology,Dr Jones,2026-05-21
+P0728,E0728,19,Male,J44.9,COPD,Hemoglobin,16.7,g/dL,12.0,16.0,High,Routine,Pulmonology,Dr Thomas,2026-05-28
+P0729,E0729,21,Male,J44.9,COPD,WBC,9.3,10^9/L,4.0,11.0,Normal,Routine,Pulmonology,Dr Jones,2026-05-26
+P0730,E0730,82,Male,K76.9,Liver disease,Platelets,535.4,10^9/L,150.0,450.0,High,Routine,Hepatology,Dr Patel,2026-05-06
+P0731,E0731,65,Male,R50.9,Fever,Creatinine,5.9,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Wilson,2026-05-11
+P0732,E0732,37,Female,D64.9,Anemia,Platelets,48.4,10^9/L,150.0,450.0,Low,Routine,Internal Medicine,Dr Jones,2026-05-08
+P0733,E0733,80,Male,N17.9,Acute kidney injury,HbA1c,6.9,%,4.0,5.6,High,Routine,ICU,Dr Thomas,2026-05-29
+P0734,E0734,73,Female,D64.9,Anemia,AST,124.5,U/L,10.0,40.0,High,Routine,Internal Medicine,Dr Lee,2026-05-25
+P0735,E0735,50,Male,R50.9,Fever,Hemoglobin,8.2,g/dL,12.0,16.0,Low,High Risk,Emergency,Dr Smith,2026-05-15
+P0736,E0736,66,Female,I50.9,Heart failure,WBC,24.6,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Lee,2026-05-08
+P0737,E0737,70,Female,A41.9,Sepsis,AST,54.5,U/L,10.0,40.0,High,Routine,Emergency,Dr Smith,2026-05-06
+P0738,E0738,43,Male,R50.9,Fever,Hemoglobin,12.1,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Smith,2026-05-12
+P0739,E0739,54,Male,N18.4,Chronic kidney disease,Troponin,30.6,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Smith,2026-05-26
+P0740,E0740,27,Male,I10,Hypertension,Troponin,56.6,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Thomas,2026-05-22
+P0741,E0741,62,Male,K76.9,Liver disease,Troponin,54.3,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Adams,2026-05-10
+P0742,E0742,87,Female,I10,Hypertension,AST,128.3,U/L,10.0,40.0,High,Routine,Cardiology,Dr Thomas,2026-05-04
+P0743,E0743,46,Female,J44.9,COPD,HbA1c,8.8,%,4.0,5.6,High,High Risk,Pulmonology,Dr Patel,2026-05-13
+P0744,E0744,78,Female,J44.9,COPD,Creatinine,1.7,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Smith,2026-06-02
+P0745,E0745,52,Female,J44.9,COPD,Troponin,63.9,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Jones,2026-05-17
+P0746,E0746,35,Male,I10,Hypertension,Glucose,120.1,mg/dL,70.0,140.0,Normal,Routine,Cardiology,Dr Patel,2026-05-20
+P0747,E0747,49,Female,D64.9,Anemia,Glucose,89.6,mg/dL,70.0,140.0,Normal,Routine,Internal Medicine,Dr Smith,2026-05-18
+P0748,E0748,60,Male,I10,Hypertension,Creatinine,1.4,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Lee,2026-05-18
+P0749,E0749,23,Male,N17.9,Acute kidney injury,ALT,62.1,U/L,7.0,56.0,High,Routine,ICU,Dr Brown,2026-06-02
+P0750,E0750,90,Female,I10,Hypertension,Potassium,6.2,mmol/L,3.5,5.1,High,Critical,Cardiology,Dr Thomas,2026-05-12
+P0751,E0751,39,Female,J44.9,COPD,Glucose,297.7,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Patel,2026-05-09
+P0752,E0752,32,Male,K76.9,Liver disease,AST,28.6,U/L,10.0,40.0,Normal,Routine,Hepatology,Dr Lee,2026-05-30
+P0753,E0753,30,Female,J44.9,COPD,Creatinine,4.5,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Brown,2026-05-29
+P0754,E0754,87,Female,I50.9,Heart failure,Sodium,128.4,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Brown,2026-05-21
+P0755,E0755,42,Male,D64.9,Anemia,Creatinine,2.4,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Lee,2026-05-05
+P0756,E0756,53,Female,J44.9,COPD,WBC,20.2,10^9/L,4.0,11.0,High,Routine,Pulmonology,Dr Smith,2026-05-17
+P0757,E0757,76,Male,R50.9,Fever,Potassium,6.3,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Smith,2026-05-15
+P0758,E0758,64,Female,K76.9,Liver disease,Hemoglobin,8.3,g/dL,12.0,16.0,Low,High Risk,Hepatology,Dr Thomas,2026-05-18
+P0759,E0759,51,Female,E11.9,Type 2 diabetes,Troponin,48.6,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Jones,2026-05-14
+P0760,E0760,21,Male,E11.9,Type 2 diabetes,WBC,6.1,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Thomas,2026-05-17
+P0761,E0761,63,Male,I50.9,Heart failure,Sodium,124.0,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Wilson,2026-06-02
+P0762,E0762,70,Female,R50.9,Fever,ALT,369.9,U/L,7.0,56.0,High,Routine,Emergency,Dr Jones,2026-05-27
+P0763,E0763,73,Male,N17.9,Acute kidney injury,AST,184.0,U/L,10.0,40.0,High,Routine,ICU,Dr Adams,2026-05-26
+P0764,E0764,70,Female,I50.9,Heart failure,Creatinine,4.4,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Thomas,2026-05-08
+P0765,E0765,27,Male,I50.9,Heart failure,HbA1c,11.1,%,4.0,5.6,High,High Risk,Cardiology,Dr Wilson,2026-05-23
+P0766,E0766,78,Male,K76.9,Liver disease,Lactate,2.7,mmol/L,0.5,2.2,High,Routine,Hepatology,Dr Thomas,2026-05-30
+P0767,E0767,31,Male,N18.4,Chronic kidney disease,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Brown,2026-05-04
+P0768,E0768,88,Female,I50.9,Heart failure,Creatinine,4.2,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Patel,2026-05-08
+P0769,E0769,61,Male,N17.9,Acute kidney injury,Sodium,128.5,mmol/L,135.0,145.0,Low,Routine,ICU,Dr Wilson,2026-05-24
+P0770,E0770,86,Male,E11.9,Type 2 diabetes,HbA1c,6.3,%,4.0,5.6,High,Routine,Endocrinology,Dr Jones,2026-05-07
+P0771,E0771,23,Male,J44.9,COPD,HbA1c,5.2,%,4.0,5.6,Normal,Routine,Pulmonology,Dr Brown,2026-05-13
+P0772,E0772,87,Female,I10,Hypertension,Platelets,97.7,10^9/L,150.0,450.0,Low,Routine,Cardiology,Dr Adams,2026-05-23
+P0773,E0773,44,Female,A41.9,Sepsis,ALT,120.8,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-15
+P0774,E0774,79,Male,J44.9,COPD,Troponin,117.6,ng/L,0.0,14.0,High,Routine,Pulmonology,Dr Jones,2026-05-08
+P0775,E0775,44,Male,I10,Hypertension,Glucose,154.5,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Adams,2026-05-18
+P0776,E0776,73,Male,K76.9,Liver disease,Potassium,2.6,mmol/L,3.5,5.1,Low,Critical,Hepatology,Dr Thomas,2026-05-16
+P0777,E0777,53,Female,R50.9,Fever,Glucose,261.3,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Jones,2026-05-15
+P0778,E0778,76,Female,E11.9,Type 2 diabetes,HbA1c,11.2,%,4.0,5.6,High,High Risk,Endocrinology,Dr Thomas,2026-05-16
+P0779,E0779,60,Male,I10,Hypertension,AST,28.6,U/L,10.0,40.0,Normal,Routine,Cardiology,Dr Thomas,2026-06-03
+P0780,E0780,46,Male,N17.9,Acute kidney injury,AST,190.7,U/L,10.0,40.0,High,Routine,ICU,Dr Wilson,2026-05-28
+P0781,E0781,39,Male,D64.9,Anemia,Creatinine,2.4,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Patel,2026-05-10
+P0782,E0782,81,Female,N18.4,Chronic kidney disease,HbA1c,10.5,%,4.0,5.6,High,High Risk,Nephrology,Dr Jones,2026-05-21
+P0783,E0783,64,Female,K76.9,Liver disease,AST,165.2,U/L,10.0,40.0,High,Routine,Hepatology,Dr Wilson,2026-05-17
+P0784,E0784,64,Female,I10,Hypertension,Sodium,126.0,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Jones,2026-05-05
+P0785,E0785,18,Male,A41.9,Sepsis,Creatinine,5.2,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Thomas,2026-05-11
+P0786,E0786,22,Female,D64.9,Anemia,Lactate,2.5,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Patel,2026-05-04
+P0787,E0787,81,Male,I10,Hypertension,Hemoglobin,10.4,g/dL,12.0,16.0,Low,Routine,Cardiology,Dr Jones,2026-06-01
+P0788,E0788,23,Male,A41.9,Sepsis,Creatinine,3.1,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Jones,2026-05-26
+P0789,E0789,84,Female,I50.9,Heart failure,HbA1c,7.3,%,4.0,5.6,High,Routine,Cardiology,Dr Jones,2026-05-22
+P0790,E0790,27,Female,J44.9,COPD,Platelets,55.3,10^9/L,150.0,450.0,Low,Routine,Pulmonology,Dr Smith,2026-05-15
+P0791,E0791,74,Male,I50.9,Heart failure,Creatinine,5.3,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Brown,2026-05-21
+P0792,E0792,52,Male,R50.9,Fever,HbA1c,10.7,%,4.0,5.6,High,High Risk,Emergency,Dr Thomas,2026-05-06
+P0793,E0793,32,Male,N17.9,Acute kidney injury,AST,278.2,U/L,10.0,40.0,High,Routine,ICU,Dr Wilson,2026-05-31
+P0794,E0794,24,Female,D64.9,Anemia,Sodium,154.1,mmol/L,135.0,145.0,High,Routine,Internal Medicine,Dr Wilson,2026-05-20
+P0795,E0795,68,Male,K76.9,Liver disease,HbA1c,11.4,%,4.0,5.6,High,High Risk,Hepatology,Dr Adams,2026-05-06
+P0796,E0796,46,Female,R50.9,Fever,Troponin,14.9,ng/L,0.0,14.0,High,Routine,Emergency,Dr Wilson,2026-05-15
+P0797,E0797,57,Male,E11.9,Type 2 diabetes,Potassium,5.5,mmol/L,3.5,5.1,High,Routine,Endocrinology,Dr Jones,2026-05-22
+P0798,E0798,20,Female,N18.4,Chronic kidney disease,ALT,109.2,U/L,7.0,56.0,High,Routine,Nephrology,Dr Brown,2026-05-30
+P0799,E0799,19,Male,A41.9,Sepsis,WBC,22.7,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Thomas,2026-05-29
+P0800,E0800,37,Female,J44.9,COPD,Platelets,362.5,10^9/L,150.0,450.0,Normal,Routine,Pulmonology,Dr Jones,2026-05-16
+P0801,E0801,40,Female,K76.9,Liver disease,ALT,384.3,U/L,7.0,56.0,High,Routine,Hepatology,Dr Patel,2026-05-22
+P0802,E0802,47,Female,A41.9,Sepsis,AST,236.4,U/L,10.0,40.0,High,Routine,Emergency,Dr Wilson,2026-05-07
+P0803,E0803,26,Male,I10,Hypertension,Lactate,5.6,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Wilson,2026-05-24
+P0804,E0804,44,Female,I50.9,Heart failure,AST,325.8,U/L,10.0,40.0,High,Routine,Cardiology,Dr Patel,2026-05-13
+P0805,E0805,23,Female,A41.9,Sepsis,Troponin,91.7,ng/L,0.0,14.0,High,Routine,Emergency,Dr Smith,2026-05-12
+P0806,E0806,48,Female,N17.9,Acute kidney injury,Troponin,21.7,ng/L,0.0,14.0,High,Routine,ICU,Dr Lee,2026-05-18
+P0807,E0807,32,Female,N17.9,Acute kidney injury,Potassium,3.5,mmol/L,3.5,5.1,Normal,Routine,ICU,Dr Jones,2026-05-28
+P0808,E0808,78,Male,K76.9,Liver disease,WBC,4.5,10^9/L,4.0,11.0,Normal,Routine,Hepatology,Dr Adams,2026-05-31
+P0809,E0809,68,Male,I10,Hypertension,ALT,227.8,U/L,7.0,56.0,High,Routine,Cardiology,Dr Wilson,2026-05-10
+P0810,E0810,33,Male,D64.9,Anemia,Troponin,59.7,ng/L,0.0,14.0,High,Routine,Internal Medicine,Dr Lee,2026-05-07
+P0811,E0811,30,Male,A41.9,Sepsis,ALT,119.0,U/L,7.0,56.0,High,Routine,Emergency,Dr Jones,2026-05-26
+P0812,E0812,76,Male,K76.9,Liver disease,Glucose,337.3,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Wilson,2026-05-15
+P0813,E0813,38,Male,A41.9,Sepsis,Potassium,5.4,mmol/L,3.5,5.1,High,Routine,Emergency,Dr Patel,2026-05-04
+P0814,E0814,60,Male,N18.4,Chronic kidney disease,HbA1c,4.8,%,4.0,5.6,Normal,Routine,Nephrology,Dr Patel,2026-06-02
+P0815,E0815,62,Female,I10,Hypertension,Platelets,413.4,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Patel,2026-05-17
+P0816,E0816,32,Female,K76.9,Liver disease,Sodium,136.2,mmol/L,135.0,145.0,Normal,Routine,Hepatology,Dr Lee,2026-05-12
+P0817,E0817,79,Female,N17.9,Acute kidney injury,HbA1c,4.5,%,4.0,5.6,Normal,Routine,ICU,Dr Jones,2026-05-29
+P0818,E0818,86,Female,R50.9,Fever,Potassium,4.3,mmol/L,3.5,5.1,Normal,Routine,Emergency,Dr Jones,2026-05-09
+P0819,E0819,64,Female,A41.9,Sepsis,Glucose,347.3,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Adams,2026-05-29
+P0820,E0820,37,Female,D64.9,Anemia,Potassium,3.8,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Thomas,2026-05-20
+P0821,E0821,59,Female,R50.9,Fever,HbA1c,10.8,%,4.0,5.6,High,High Risk,Emergency,Dr Thomas,2026-05-04
+P0822,E0822,81,Male,N18.4,Chronic kidney disease,ALT,49.6,U/L,7.0,56.0,Normal,Routine,Nephrology,Dr Thomas,2026-05-21
+P0823,E0823,83,Female,K76.9,Liver disease,AST,76.6,U/L,10.0,40.0,High,Routine,Hepatology,Dr Thomas,2026-05-19
+P0824,E0824,60,Male,E11.9,Type 2 diabetes,HbA1c,8.5,%,4.0,5.6,High,High Risk,Endocrinology,Dr Smith,2026-06-02
+P0825,E0825,19,Female,K76.9,Liver disease,Glucose,307.2,mg/dL,70.0,140.0,High,Routine,Hepatology,Dr Wilson,2026-05-06
+P0826,E0826,39,Female,E11.9,Type 2 diabetes,Glucose,266.0,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Lee,2026-05-17
+P0827,E0827,83,Female,A41.9,Sepsis,Potassium,6.0,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Patel,2026-05-18
+P0828,E0828,90,Male,K76.9,Liver disease,Glucose,137.9,mg/dL,70.0,140.0,Normal,Routine,Hepatology,Dr Brown,2026-05-17
+P0829,E0829,46,Male,N17.9,Acute kidney injury,Sodium,118.7,mmol/L,135.0,145.0,Low,Routine,ICU,Dr Thomas,2026-05-16
+P0830,E0830,50,Female,N17.9,Acute kidney injury,Lactate,2.0,mmol/L,0.5,2.2,Normal,Routine,ICU,Dr Adams,2026-05-27
+P0831,E0831,63,Male,K76.9,Liver disease,Creatinine,5.7,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Jones,2026-05-13
+P0832,E0832,77,Male,N18.4,Chronic kidney disease,Lactate,4.9,mmol/L,0.5,2.2,High,Routine,Nephrology,Dr Lee,2026-06-01
+P0833,E0833,83,Female,K76.9,Liver disease,Creatinine,3.4,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Wilson,2026-05-09
+P0834,E0834,77,Female,K76.9,Liver disease,Troponin,34.7,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Lee,2026-05-07
+P0835,E0835,86,Female,K76.9,Liver disease,Lactate,0.5,mmol/L,0.5,2.2,Normal,Routine,Hepatology,Dr Brown,2026-05-29
+P0836,E0836,75,Female,D64.9,Anemia,Glucose,326.8,mg/dL,70.0,140.0,High,Routine,Internal Medicine,Dr Patel,2026-05-19
+P0837,E0837,51,Female,D64.9,Anemia,Lactate,2.9,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Wilson,2026-05-11
+P0838,E0838,82,Female,I50.9,Heart failure,WBC,14.7,10^9/L,4.0,11.0,High,Routine,Cardiology,Dr Patel,2026-05-11
+P0839,E0839,89,Female,N18.4,Chronic kidney disease,AST,256.8,U/L,10.0,40.0,High,Routine,Nephrology,Dr Thomas,2026-05-27
+P0840,E0840,67,Male,E11.9,Type 2 diabetes,Potassium,3.2,mmol/L,3.5,5.1,Low,Routine,Endocrinology,Dr Thomas,2026-05-12
+P0841,E0841,75,Male,N18.4,Chronic kidney disease,Creatinine,4.2,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Smith,2026-05-04
+P0842,E0842,18,Female,I50.9,Heart failure,HbA1c,5.8,%,4.0,5.6,High,Routine,Cardiology,Dr Adams,2026-05-17
+P0843,E0843,55,Male,K76.9,Liver disease,Glucose,139.7,mg/dL,70.0,140.0,Normal,Routine,Hepatology,Dr Smith,2026-05-28
+P0844,E0844,27,Male,I50.9,Heart failure,WBC,8.1,10^9/L,4.0,11.0,Normal,Routine,Cardiology,Dr Wilson,2026-05-26
+P0845,E0845,90,Male,I50.9,Heart failure,Troponin,91.0,ng/L,0.0,14.0,High,Routine,Cardiology,Dr Jones,2026-05-19
+P0846,E0846,41,Female,N17.9,Acute kidney injury,Platelets,368.0,10^9/L,150.0,450.0,Normal,Routine,ICU,Dr Wilson,2026-06-02
+P0847,E0847,60,Male,J44.9,COPD,AST,314.8,U/L,10.0,40.0,High,Routine,Pulmonology,Dr Thomas,2026-05-24
+P0848,E0848,34,Male,E11.9,Type 2 diabetes,WBC,20.5,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Thomas,2026-05-06
+P0849,E0849,58,Male,N17.9,Acute kidney injury,Potassium,4.1,mmol/L,3.5,5.1,Normal,Routine,ICU,Dr Thomas,2026-05-18
+P0850,E0850,53,Female,A41.9,Sepsis,Creatinine,2.3,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Smith,2026-05-19
+P0851,E0851,64,Male,N17.9,Acute kidney injury,Troponin,57.9,ng/L,0.0,14.0,High,Routine,ICU,Dr Adams,2026-05-23
+P0852,E0852,62,Male,J44.9,COPD,Creatinine,4.1,mg/dL,0.6,1.2,High,Routine,Pulmonology,Dr Brown,2026-05-20
+P0853,E0853,37,Female,E11.9,Type 2 diabetes,Creatinine,2.0,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Patel,2026-05-17
+P0854,E0854,56,Female,K76.9,Liver disease,HbA1c,9.8,%,4.0,5.6,High,High Risk,Hepatology,Dr Patel,2026-05-31
+P0855,E0855,40,Female,E11.9,Type 2 diabetes,Creatinine,2.4,mg/dL,0.6,1.2,High,Routine,Endocrinology,Dr Wilson,2026-05-12
+P0856,E0856,68,Female,J44.9,COPD,Hemoglobin,9.8,g/dL,12.0,16.0,Low,Routine,Pulmonology,Dr Smith,2026-05-10
+P0857,E0857,83,Female,J44.9,COPD,Platelets,337.1,10^9/L,150.0,450.0,Normal,Routine,Pulmonology,Dr Lee,2026-05-04
+P0858,E0858,52,Male,E11.9,Type 2 diabetes,WBC,7.8,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Jones,2026-05-15
+P0859,E0859,43,Female,N18.4,Chronic kidney disease,Potassium,6.1,mmol/L,3.5,5.1,High,Critical,Nephrology,Dr Brown,2026-05-18
+P0860,E0860,89,Female,J44.9,COPD,Platelets,466.6,10^9/L,150.0,450.0,High,Routine,Pulmonology,Dr Lee,2026-05-24
+P0861,E0861,23,Male,N17.9,Acute kidney injury,Hemoglobin,15.5,g/dL,12.0,16.0,Normal,Routine,ICU,Dr Smith,2026-05-19
+P0862,E0862,86,Male,N17.9,Acute kidney injury,Platelets,77.1,10^9/L,150.0,450.0,Low,Routine,ICU,Dr Brown,2026-05-13
+P0863,E0863,58,Female,N18.4,Chronic kidney disease,Platelets,514.4,10^9/L,150.0,450.0,High,Routine,Nephrology,Dr Thomas,2026-05-31
+P0864,E0864,84,Female,E11.9,Type 2 diabetes,WBC,21.7,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Jones,2026-05-14
+P0865,E0865,55,Male,N18.4,Chronic kidney disease,Potassium,4.4,mmol/L,3.5,5.1,Normal,Routine,Nephrology,Dr Jones,2026-05-07
+P0866,E0866,69,Female,J44.9,COPD,Glucose,168.9,mg/dL,70.0,140.0,High,Routine,Pulmonology,Dr Jones,2026-06-03
+P0867,E0867,55,Male,A41.9,Sepsis,Troponin,27.2,ng/L,0.0,14.0,High,Routine,Emergency,Dr Lee,2026-05-12
+P0868,E0868,37,Female,N18.4,Chronic kidney disease,Glucose,181.9,mg/dL,70.0,140.0,High,Routine,Nephrology,Dr Lee,2026-05-17
+P0869,E0869,80,Male,J44.9,COPD,WBC,8.8,10^9/L,4.0,11.0,Normal,Routine,Pulmonology,Dr Lee,2026-05-18
+P0870,E0870,29,Male,R50.9,Fever,Platelets,476.8,10^9/L,150.0,450.0,High,Routine,Emergency,Dr Jones,2026-05-21
+P0871,E0871,80,Male,D64.9,Anemia,WBC,14.9,10^9/L,4.0,11.0,High,Routine,Internal Medicine,Dr Wilson,2026-05-12
+P0872,E0872,20,Female,I10,Hypertension,Platelets,405.4,10^9/L,150.0,450.0,Normal,Routine,Cardiology,Dr Wilson,2026-05-29
+P0873,E0873,53,Male,K76.9,Liver disease,ALT,129.7,U/L,7.0,56.0,High,Routine,Hepatology,Dr Wilson,2026-05-23
+P0874,E0874,43,Male,E11.9,Type 2 diabetes,Sodium,122.2,mmol/L,135.0,145.0,Low,Routine,Endocrinology,Dr Adams,2026-05-21
+P0875,E0875,71,Female,E11.9,Type 2 diabetes,WBC,17.3,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Thomas,2026-05-19
+P0876,E0876,62,Female,K76.9,Liver disease,ALT,96.8,U/L,7.0,56.0,High,Routine,Hepatology,Dr Wilson,2026-05-31
+P0877,E0877,73,Male,A41.9,Sepsis,Hemoglobin,13.3,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Lee,2026-05-15
+P0878,E0878,30,Male,N18.4,Chronic kidney disease,Troponin,69.4,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Smith,2026-05-17
+P0879,E0879,67,Female,E11.9,Type 2 diabetes,Troponin,46.9,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Patel,2026-05-15
+P0880,E0880,74,Male,I10,Hypertension,Sodium,142.6,mmol/L,135.0,145.0,Normal,Routine,Cardiology,Dr Adams,2026-06-01
+P0881,E0881,70,Male,N17.9,Acute kidney injury,HbA1c,6.3,%,4.0,5.6,High,Routine,ICU,Dr Smith,2026-05-27
+P0882,E0882,60,Female,J44.9,COPD,WBC,21.0,10^9/L,4.0,11.0,High,Routine,Pulmonology,Dr Jones,2026-05-27
+P0883,E0883,59,Male,N17.9,Acute kidney injury,HbA1c,5.8,%,4.0,5.6,High,Routine,ICU,Dr Adams,2026-05-12
+P0884,E0884,49,Female,N17.9,Acute kidney injury,Hemoglobin,17.3,g/dL,12.0,16.0,High,Routine,ICU,Dr Adams,2026-05-31
+P0885,E0885,77,Female,J44.9,COPD,ALT,206.2,U/L,7.0,56.0,High,Routine,Pulmonology,Dr Thomas,2026-05-26
+P0886,E0886,80,Male,A41.9,Sepsis,ALT,307.0,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-14
+P0887,E0887,42,Male,A41.9,Sepsis,Troponin,19.8,ng/L,0.0,14.0,High,Routine,Emergency,Dr Lee,2026-06-01
+P0888,E0888,28,Male,K76.9,Liver disease,HbA1c,11.4,%,4.0,5.6,High,High Risk,Hepatology,Dr Wilson,2026-06-02
+P0889,E0889,73,Male,R50.9,Fever,Hemoglobin,11.7,g/dL,12.0,16.0,Low,Routine,Emergency,Dr Lee,2026-05-14
+P0890,E0890,47,Female,J44.9,COPD,Potassium,6.5,mmol/L,3.5,5.1,High,Critical,Pulmonology,Dr Lee,2026-05-22
+P0891,E0891,59,Male,R50.9,Fever,Glucose,121.2,mg/dL,70.0,140.0,Normal,Routine,Emergency,Dr Wilson,2026-05-22
+P0892,E0892,44,Female,R50.9,Fever,Platelets,257.8,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Patel,2026-05-13
+P0893,E0893,76,Female,N17.9,Acute kidney injury,Troponin,12.6,ng/L,0.0,14.0,Normal,Routine,ICU,Dr Patel,2026-05-24
+P0894,E0894,50,Male,D64.9,Anemia,HbA1c,4.7,%,4.0,5.6,Normal,Routine,Internal Medicine,Dr Thomas,2026-05-05
+P0895,E0895,65,Male,R50.9,Fever,ALT,397.7,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-11
+P0896,E0896,37,Female,I50.9,Heart failure,Hemoglobin,14.9,g/dL,12.0,16.0,Normal,Routine,Cardiology,Dr Brown,2026-05-13
+P0897,E0897,46,Female,D64.9,Anemia,ALT,214.3,U/L,7.0,56.0,High,Routine,Internal Medicine,Dr Patel,2026-05-18
+P0898,E0898,68,Female,N17.9,Acute kidney injury,Sodium,131.6,mmol/L,135.0,145.0,Low,Routine,ICU,Dr Wilson,2026-05-04
+P0899,E0899,60,Female,R50.9,Fever,Glucose,137.5,mg/dL,70.0,140.0,Normal,Routine,Emergency,Dr Lee,2026-05-12
+P0900,E0900,61,Female,J44.9,COPD,Hemoglobin,11.7,g/dL,12.0,16.0,Low,Routine,Pulmonology,Dr Jones,2026-05-27
+P0901,E0901,86,Male,A41.9,Sepsis,Potassium,6.3,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Brown,2026-05-18
+P0902,E0902,59,Male,N18.4,Chronic kidney disease,Hemoglobin,15.4,g/dL,12.0,16.0,Normal,Routine,Nephrology,Dr Brown,2026-05-11
+P0903,E0903,56,Female,K76.9,Liver disease,Platelets,446.9,10^9/L,150.0,450.0,Normal,Routine,Hepatology,Dr Thomas,2026-05-26
+P0904,E0904,37,Male,I10,Hypertension,Potassium,2.8,mmol/L,3.5,5.1,Low,Critical,Cardiology,Dr Adams,2026-05-24
+P0905,E0905,76,Male,E11.9,Type 2 diabetes,Troponin,53.8,ng/L,0.0,14.0,High,Routine,Endocrinology,Dr Wilson,2026-05-08
+P0906,E0906,54,Male,E11.9,Type 2 diabetes,Potassium,5.1,mmol/L,3.5,5.1,Normal,Routine,Endocrinology,Dr Patel,2026-05-04
+P0907,E0907,46,Female,I10,Hypertension,AST,50.2,U/L,10.0,40.0,High,Routine,Cardiology,Dr Smith,2026-05-26
+P0908,E0908,19,Male,D64.9,Anemia,Lactate,5.5,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Wilson,2026-05-10
+P0909,E0909,27,Male,N17.9,Acute kidney injury,Sodium,155.1,mmol/L,135.0,145.0,High,Routine,ICU,Dr Smith,2026-05-08
+P0910,E0910,77,Male,D64.9,Anemia,Creatinine,3.1,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Brown,2026-05-20
+P0911,E0911,63,Female,I50.9,Heart failure,Glucose,227.8,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Smith,2026-05-23
+P0912,E0912,73,Male,A41.9,Sepsis,Potassium,6.3,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Thomas,2026-05-12
+P0913,E0913,47,Female,E11.9,Type 2 diabetes,Glucose,219.2,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Brown,2026-05-15
+P0914,E0914,83,Male,A41.9,Sepsis,WBC,18.3,10^9/L,4.0,11.0,High,Routine,Emergency,Dr Adams,2026-05-08
+P0915,E0915,58,Female,R50.9,Fever,Platelets,236.7,10^9/L,150.0,450.0,Normal,Routine,Emergency,Dr Jones,2026-05-31
+P0916,E0916,71,Male,K76.9,Liver disease,Creatinine,4.3,mg/dL,0.6,1.2,High,Routine,Hepatology,Dr Patel,2026-05-18
+P0917,E0917,41,Female,R50.9,Fever,Creatinine,6.1,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Brown,2026-05-31
+P0918,E0918,32,Male,N18.4,Chronic kidney disease,Hemoglobin,13.0,g/dL,12.0,16.0,Normal,Routine,Nephrology,Dr Wilson,2026-05-15
+P0919,E0919,79,Male,N18.4,Chronic kidney disease,Troponin,4.8,ng/L,0.0,14.0,Normal,Routine,Nephrology,Dr Thomas,2026-06-03
+P0920,E0920,57,Female,N18.4,Chronic kidney disease,Platelets,254.2,10^9/L,150.0,450.0,Normal,Routine,Nephrology,Dr Jones,2026-05-04
+P0921,E0921,85,Male,D64.9,Anemia,Lactate,4.6,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Lee,2026-05-27
+P0922,E0922,50,Female,E11.9,Type 2 diabetes,Hemoglobin,11.0,g/dL,12.0,16.0,Low,Routine,Endocrinology,Dr Lee,2026-05-05
+P0923,E0923,73,Male,E11.9,Type 2 diabetes,ALT,393.6,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Thomas,2026-05-28
+P0924,E0924,70,Female,R50.9,Fever,ALT,376.4,U/L,7.0,56.0,High,Routine,Emergency,Dr Thomas,2026-05-14
+P0925,E0925,37,Female,J44.9,COPD,Lactate,5.6,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Jones,2026-05-07
+P0926,E0926,48,Female,R50.9,Fever,Troponin,114.0,ng/L,0.0,14.0,High,Routine,Emergency,Dr Wilson,2026-05-20
+P0927,E0927,27,Male,A41.9,Sepsis,Hemoglobin,12.0,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Wilson,2026-05-22
+P0928,E0928,73,Male,A41.9,Sepsis,WBC,2.3,10^9/L,4.0,11.0,Low,Routine,Emergency,Dr Patel,2026-05-09
+P0929,E0929,68,Female,N17.9,Acute kidney injury,Platelets,491.5,10^9/L,150.0,450.0,High,Routine,ICU,Dr Brown,2026-05-24
+P0930,E0930,77,Female,A41.9,Sepsis,Lactate,4.6,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-06-02
+P0931,E0931,86,Male,D64.9,Anemia,HbA1c,6.4,%,4.0,5.6,High,Routine,Internal Medicine,Dr Lee,2026-05-26
+P0932,E0932,30,Female,J44.9,COPD,Lactate,3.9,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Adams,2026-05-21
+P0933,E0933,81,Female,R50.9,Fever,Sodium,146.2,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Smith,2026-05-24
+P0934,E0934,20,Female,I10,Hypertension,Creatinine,1.0,mg/dL,0.6,1.2,Normal,Routine,Cardiology,Dr Wilson,2026-05-17
+P0935,E0935,90,Female,D64.9,Anemia,Lactate,8.3,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Wilson,2026-05-11
+P0936,E0936,36,Male,J44.9,COPD,Lactate,3.2,mmol/L,0.5,2.2,High,Routine,Pulmonology,Dr Smith,2026-05-08
+P0937,E0937,69,Male,I50.9,Heart failure,ALT,146.3,U/L,7.0,56.0,High,Routine,Cardiology,Dr Smith,2026-05-13
+P0938,E0938,56,Male,E11.9,Type 2 diabetes,WBC,9.4,10^9/L,4.0,11.0,Normal,Routine,Endocrinology,Dr Lee,2026-05-11
+P0939,E0939,24,Male,N18.4,Chronic kidney disease,ALT,146.0,U/L,7.0,56.0,High,Routine,Nephrology,Dr Wilson,2026-05-08
+P0940,E0940,75,Male,K76.9,Liver disease,Platelets,443.2,10^9/L,150.0,450.0,Normal,Routine,Hepatology,Dr Lee,2026-05-23
+P0941,E0941,49,Male,I10,Hypertension,Sodium,120.1,mmol/L,135.0,145.0,Low,Routine,Cardiology,Dr Wilson,2026-05-13
+P0942,E0942,55,Female,K76.9,Liver disease,HbA1c,4.7,%,4.0,5.6,Normal,Routine,Hepatology,Dr Thomas,2026-05-14
+P0943,E0943,27,Male,R50.9,Fever,ALT,349.3,U/L,7.0,56.0,High,Routine,Emergency,Dr Lee,2026-05-16
+P0944,E0944,24,Female,J44.9,COPD,Hemoglobin,15.5,g/dL,12.0,16.0,Normal,Routine,Pulmonology,Dr Brown,2026-05-04
+P0945,E0945,71,Female,I50.9,Heart failure,HbA1c,9.3,%,4.0,5.6,High,High Risk,Cardiology,Dr Lee,2026-05-16
+P0946,E0946,76,Female,N18.4,Chronic kidney disease,ALT,269.5,U/L,7.0,56.0,High,Routine,Nephrology,Dr Wilson,2026-05-21
+P0947,E0947,47,Female,N17.9,Acute kidney injury,Troponin,72.5,ng/L,0.0,14.0,High,Routine,ICU,Dr Adams,2026-06-02
+P0948,E0948,31,Male,J44.9,COPD,Hemoglobin,7.0,g/dL,12.0,16.0,Low,High Risk,Pulmonology,Dr Patel,2026-05-21
+P0949,E0949,46,Male,I10,Hypertension,AST,240.9,U/L,10.0,40.0,High,Routine,Cardiology,Dr Smith,2026-05-19
+P0950,E0950,80,Female,I10,Hypertension,Lactate,5.2,mmol/L,0.5,2.2,High,Routine,Cardiology,Dr Wilson,2026-05-06
+P0951,E0951,29,Female,N18.4,Chronic kidney disease,Lactate,1.3,mmol/L,0.5,2.2,Normal,Routine,Nephrology,Dr Adams,2026-05-12
+P0952,E0952,49,Female,I10,Hypertension,Potassium,6.6,mmol/L,3.5,5.1,High,Critical,Cardiology,Dr Wilson,2026-05-24
+P0953,E0953,44,Female,K76.9,Liver disease,WBC,26.2,10^9/L,4.0,11.0,High,Routine,Hepatology,Dr Jones,2026-05-05
+P0954,E0954,85,Female,N17.9,Acute kidney injury,HbA1c,11.3,%,4.0,5.6,High,High Risk,ICU,Dr Lee,2026-05-20
+P0955,E0955,37,Male,E11.9,Type 2 diabetes,ALT,375.2,U/L,7.0,56.0,High,Routine,Endocrinology,Dr Smith,2026-05-30
+P0956,E0956,62,Female,K76.9,Liver disease,Hemoglobin,7.4,g/dL,12.0,16.0,Low,High Risk,Hepatology,Dr Lee,2026-05-24
+P0957,E0957,37,Male,D64.9,Anemia,AST,271.5,U/L,10.0,40.0,High,Routine,Internal Medicine,Dr Lee,2026-05-09
+P0958,E0958,34,Female,N18.4,Chronic kidney disease,Troponin,27.1,ng/L,0.0,14.0,High,Routine,Nephrology,Dr Brown,2026-05-29
+P0959,E0959,90,Female,D64.9,Anemia,Platelets,114.4,10^9/L,150.0,450.0,Low,Routine,Internal Medicine,Dr Lee,2026-05-10
+P0960,E0960,53,Male,A41.9,Sepsis,HbA1c,10.0,%,4.0,5.6,High,High Risk,Emergency,Dr Adams,2026-05-26
+P0961,E0961,77,Female,D64.9,Anemia,Lactate,4.2,mmol/L,0.5,2.2,High,Routine,Internal Medicine,Dr Lee,2026-05-07
+P0962,E0962,46,Male,A41.9,Sepsis,Creatinine,3.1,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Thomas,2026-05-31
+P0963,E0963,31,Male,R50.9,Fever,ALT,188.1,U/L,7.0,56.0,High,Routine,Emergency,Dr Adams,2026-05-07
+P0964,E0964,22,Female,N18.4,Chronic kidney disease,Sodium,152.4,mmol/L,135.0,145.0,High,Routine,Nephrology,Dr Brown,2026-05-31
+P0965,E0965,50,Female,I50.9,Heart failure,Glucose,317.4,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Patel,2026-05-26
+P0966,E0966,21,Female,I10,Hypertension,Potassium,6.8,mmol/L,3.5,5.1,High,Critical,Cardiology,Dr Smith,2026-05-27
+P0967,E0967,53,Male,E11.9,Type 2 diabetes,AST,8.6,U/L,10.0,40.0,Low,Routine,Endocrinology,Dr Thomas,2026-05-15
+P0968,E0968,55,Female,N17.9,Acute kidney injury,Lactate,0.6,mmol/L,0.5,2.2,Normal,Routine,ICU,Dr Lee,2026-05-12
+P0969,E0969,89,Female,N17.9,Acute kidney injury,Creatinine,2.1,mg/dL,0.6,1.2,High,Routine,ICU,Dr Adams,2026-05-30
+P0970,E0970,65,Male,R50.9,Fever,Sodium,152.4,mmol/L,135.0,145.0,High,Routine,Emergency,Dr Wilson,2026-05-14
+P0971,E0971,36,Female,I10,Hypertension,Creatinine,5.5,mg/dL,0.6,1.2,High,Routine,Cardiology,Dr Wilson,2026-05-18
+P0972,E0972,25,Male,K76.9,Liver disease,Lactate,7.1,mmol/L,0.5,2.2,High,Routine,Hepatology,Dr Jones,2026-05-29
+P0973,E0973,25,Male,N18.4,Chronic kidney disease,Platelets,215.4,10^9/L,150.0,450.0,Normal,Routine,Nephrology,Dr Wilson,2026-05-20
+P0974,E0974,30,Female,J44.9,COPD,Hemoglobin,9.8,g/dL,12.0,16.0,Low,Routine,Pulmonology,Dr Brown,2026-06-03
+P0975,E0975,54,Female,D64.9,Anemia,Glucose,80.4,mg/dL,70.0,140.0,Normal,Routine,Internal Medicine,Dr Adams,2026-05-07
+P0976,E0976,57,Male,N18.4,Chronic kidney disease,Sodium,145.0,mmol/L,135.0,145.0,Normal,Routine,Nephrology,Dr Adams,2026-05-23
+P0977,E0977,56,Male,E11.9,Type 2 diabetes,WBC,21.9,10^9/L,4.0,11.0,High,Routine,Endocrinology,Dr Thomas,2026-05-18
+P0978,E0978,72,Male,K76.9,Liver disease,Troponin,85.9,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Lee,2026-05-08
+P0979,E0979,67,Female,E11.9,Type 2 diabetes,Glucose,97.2,mg/dL,70.0,140.0,Normal,Routine,Endocrinology,Dr Adams,2026-05-17
+P0980,E0980,42,Female,N18.4,Chronic kidney disease,Glucose,134.6,mg/dL,70.0,140.0,Normal,Routine,Nephrology,Dr Brown,2026-05-14
+P0981,E0981,75,Male,K76.9,Liver disease,Troponin,33.6,ng/L,0.0,14.0,High,Routine,Hepatology,Dr Lee,2026-05-25
+P0982,E0982,60,Male,I10,Hypertension,Glucose,405.1,mg/dL,70.0,140.0,High,Routine,Cardiology,Dr Smith,2026-05-17
+P0983,E0983,47,Male,J44.9,COPD,Platelets,53.4,10^9/L,150.0,450.0,Low,Routine,Pulmonology,Dr Lee,2026-05-16
+P0984,E0984,83,Male,A41.9,Sepsis,Potassium,6.8,mmol/L,3.5,5.1,High,Critical,Emergency,Dr Lee,2026-05-06
+P0985,E0985,67,Male,E11.9,Type 2 diabetes,Potassium,4.2,mmol/L,3.5,5.1,Normal,Routine,Endocrinology,Dr Smith,2026-05-23
+P0986,E0986,41,Male,K76.9,Liver disease,ALT,10.8,U/L,7.0,56.0,Normal,Routine,Hepatology,Dr Jones,2026-05-18
+P0987,E0987,66,Male,R50.9,Fever,HbA1c,6.6,%,4.0,5.6,High,Routine,Emergency,Dr Smith,2026-05-27
+P0988,E0988,49,Male,N17.9,Acute kidney injury,WBC,24.6,10^9/L,4.0,11.0,High,Routine,ICU,Dr Thomas,2026-05-10
+P0989,E0989,27,Female,N18.4,Chronic kidney disease,Platelets,326.8,10^9/L,150.0,450.0,Normal,Routine,Nephrology,Dr Lee,2026-05-13
+P0990,E0990,23,Female,R50.9,Fever,Troponin,61.0,ng/L,0.0,14.0,High,Routine,Emergency,Dr Adams,2026-05-20
+P0991,E0991,19,Male,A41.9,Sepsis,Creatinine,3.6,mg/dL,0.6,1.2,High,Routine,Emergency,Dr Jones,2026-05-08
+P0992,E0992,66,Male,N17.9,Acute kidney injury,Hemoglobin,8.5,g/dL,12.0,16.0,Low,High Risk,ICU,Dr Lee,2026-05-25
+P0993,E0993,20,Female,N18.4,Chronic kidney disease,Creatinine,3.8,mg/dL,0.6,1.2,High,Routine,Nephrology,Dr Patel,2026-05-15
+P0994,E0994,55,Female,D64.9,Anemia,Potassium,4.0,mmol/L,3.5,5.1,Normal,Routine,Internal Medicine,Dr Patel,2026-05-22
+P0995,E0995,29,Female,R50.9,Fever,Glucose,187.2,mg/dL,70.0,140.0,High,Routine,Emergency,Dr Patel,2026-05-23
+P0996,E0996,79,Female,R50.9,Fever,Lactate,5.1,mmol/L,0.5,2.2,High,Routine,Emergency,Dr Thomas,2026-05-14
+P0997,E0997,34,Male,R50.9,Fever,Hemoglobin,12.2,g/dL,12.0,16.0,Normal,Routine,Emergency,Dr Wilson,2026-05-23
+P0998,E0998,60,Female,E11.9,Type 2 diabetes,Glucose,179.6,mg/dL,70.0,140.0,High,Routine,Endocrinology,Dr Wilson,2026-05-04
+P0999,E0999,78,Female,A41.9,Sepsis,Potassium,4.0,mmol/L,3.5,5.1,Normal,Routine,Emergency,Dr Thomas,2026-05-07
+P1000,E1000,53,Male,D64.9,Anemia,Creatinine,5.9,mg/dL,0.6,1.2,High,Routine,Internal Medicine,Dr Brown,2026-05-07
