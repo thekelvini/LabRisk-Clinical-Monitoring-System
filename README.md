@@ -8,6 +8,9 @@ The project demonstrates a complete data engineering workflow from data ingestio
 ## Power BI Dashboard
 <img width="1443" height="809" alt="image" src="https://github.com/user-attachments/assets/bf823e87-6d05-48ff-93e1-f26c7c4afbde" />
 
+## Dash Dashboard
+<img width="1919" height="791" alt="Screenshot 2026-06-07 211352" src="https://github.com/user-attachments/assets/9ca538b2-d31e-44a5-88ed-d1743b54ee9d" />
+
 ---
 
 ## Business Problem
