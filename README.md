@@ -1,6 +1,7 @@
 # LabRisk Clinical Monitoring System
 
 ## Overview
+<img width="1443" height="809" alt="image" src="https://github.com/user-attachments/assets/bf823e87-6d05-48ff-93e1-f26c7c4afbde" />
 
 LabRisk Clinical Monitoring System is an end-to-end healthcare analytics platform designed to automate laboratory data processing, risk classification, operational alerting, and clinical monitoring.
 
