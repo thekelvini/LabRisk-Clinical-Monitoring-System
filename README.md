@@ -5,7 +5,7 @@ LabRisk Clinical Monitoring System is an end-to-end healthcare analytics platfor
 
 The project demonstrates a complete data engineering workflow from data ingestion through analytics delivery. The system extracts healthcare laboratory records through an API, performs data transformation and validation, loads data into a relational database, generates operational reports, sends automated alerts, and provides interactive business intelligence dashboards for clinical decision support.
 
-## Power BI
+## Power BI Dashboard
 <img width="1443" height="809" alt="image" src="https://github.com/user-attachments/assets/bf823e87-6d05-48ff-93e1-f26c7c4afbde" />
 
 ---
