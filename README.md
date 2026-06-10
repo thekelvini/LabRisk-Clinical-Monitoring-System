@@ -10,6 +10,7 @@ The project demonstrates a complete data engineering workflow from data ingestio
 
 ## Dash Dashboard
 <img width="1919" height="791" alt="Screenshot 2026-06-07 211352" src="https://github.com/user-attachments/assets/9ca538b2-d31e-44a5-88ed-d1743b54ee9d" />
+<img width="1628" height="504" alt="Screenshot 2026-06-07 211511" src="https://github.com/user-attachments/assets/4c721bff-ff47-476e-9668-e04471266215" />
 
 ---
 
